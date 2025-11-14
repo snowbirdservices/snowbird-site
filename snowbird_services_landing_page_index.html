@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Snowbird Services — Multifamily Property Technology</title>
+  <meta name="description" content="Snowbird Services builds modern property technology for the multifamily industry: AI leasing, maintenance automation, resident experience, and analytics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
+    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,0.7); }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-sky-50 to-white text-slate-800">
+  <!-- Top nav -->
+  <header class="sticky top-0 z-20 bg-white/70 backdrop-blur border-b border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2">
+        <!-- Simple snowflake mark -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 text-sky-600" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M4.5 7.5l15 9M4.5 16.5l15-9M3 12h18"/>
+        </svg>
+        <span class="font-semibold tracking-tight">Snowbird Services</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#features" class="hover:text-sky-700">Features</a>
+        <a href="#solutions" class="hover:text-sky-700">Solutions</a>
+        <a href="#contact" class="hover:text-sky-700">Contact</a>
+      </nav>
+      <a href="#contact" class="hidden md:inline-flex items-center rounded-xl bg-sky-600 px-4 py-2 text-white text-sm font-medium shadow hover:bg-sky-700">Get in touch</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+      <div class="absolute -top-24 right-[-10%] h-96 w-96 rounded-full blur-3xl opacity-30 bg-sky-300"></div>
+      <div class="absolute -bottom-24 left-[-10%] h-[28rem] w-[28rem] rounded-full blur-3xl opacity-20 bg-cyan-200"></div>
+    </div>
+    <div class="mx-auto max-w-7xl px-4 pt-16 pb-24">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white px-3 py-1 text-xs font-medium text-sky-700 shadow-sm">New • Multifamily PropTech</span>
+          <h1 class="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">Operate smarter with <span class="text-sky-700">AI-first</span> tools for multifamily</h1>
+          <p class="mt-4 text-slate-600 text-lg">Snowbird Services helps owners and operators boost NOI with leasing automation, maintenance workflows, and resident experience—without switching your PMS.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#contact" class="inline-flex items-center rounded-xl bg-sky-600 px-5 py-3 text-white font-semibold shadow hover:bg-sky-700">Request a demo</a>
+            <a href="#features" class="inline-flex items-center rounded-xl bg-white px-5 py-3 font-semibold text-sky-700 border border-sky-200 hover:bg-sky-50">See features</a>
+          </div>
+          <p class="mt-4 text-xs text-slate-500">Trusted by owner-operators. Built by multifamily veterans.</p>
+        </div>
+        <div class="relative">
+          <div class="glass rounded-3xl border border-slate-200 shadow-2xl p-6">
+            <div class="grid grid-cols-2 gap-4 text-sm">
+              <div class="rounded-2xl border p-4 bg-white">
+                <p class="font-semibold">Leasing copilot</p>
+                <p class="text-slate-600">Answers 24/7, qualifies, books tours.</p>
+              </div>
+              <div class="rounded-2xl border p-4 bg-white">
+                <p class="font-semibold">Maintenance triage</p>
+                <p class="text-slate-600">Routes vendors, tracks SLAs.</p>
+              </div>
+              <div class="rounded-2xl border p-4 bg-white">
+                <p class="font-semibold">Invoice AI</p>
+                <p class="text-slate-600">OCR → GL coding in clicks.</p>
+              </div>
+              <div class="rounded-2xl border p-4 bg-white">
+                <p class="font-semibold">Resident comms</p>
+                <p class="text-slate-600">Email/SMS in one inbox.</p>
+              </div>
+            </div>
+            <div class="mt-4 text-xs text-slate-500">Integrates with AppFolio, Yardi, RealPage via API/webhooks.*</div>
+          </div>
+          <p class="mt-2 text-[11px] text-slate-400">*Logos and trademarks are property of their owners.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-20 bg-white">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl font-bold tracking-tight">Everything you need to run lean</h2>
+        <p class="mt-3 text-slate-600">Pick the wedge you need now—add the rest later.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl border p-6">
+          <div class="h-10 w-10 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center mb-3">📈</div>
+          <h3 class="font-semibold">AI Leasing</h3>
+          <p class="mt-2 text-slate-600">Omnichannel assistant that responds, qualifies, quotes and schedules tours.</p>
+        </div>
+        <div class="rounded-2xl border p-6">
+          <div class="h-10 w-10 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center mb-3">🛠️</div>
+          <h3 class="font-semibold">Maintenance</h3>
+          <p class="mt-2 text-slate-600">Photo/video intake, vendor dispatch, parts & labor capture, SLA timers.</p>
+        </div>
+        <div class="rounded-2xl border p-6">
+          <div class="h-10 w-10 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center mb-3">💳</div>
+          <h3 class="font-semibold">Billing & AP</h3>
+          <p class="mt-2 text-slate-600">Charge schedule automation, ACH/Card collection, invoice OCR and approvals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions -->
+  <section id="solutions" class="py-20 bg-sky-50">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="grid md:grid-cols-3 gap-8 items-start">
+        <div>
+          <h2 class="text-3xl font-bold tracking-tight">Built for multifamily owners & operators</h2>
+          <p class="mt-3 text-slate-600">From 100 to 10,000+ units. Start with one property, scale portfolio-wide.</p>
+        </div>
+        <ul class="md:col-span-2 grid sm:grid-cols-2 gap-4">
+          <li class="rounded-xl border bg-white p-4"><span class="font-medium">Owner-operators</span><br><span class="text-slate-600 text-sm">Self-managed portfolios seeking NOI lift.</span></li>
+          <li class="rounded-xl border bg-white p-4"><span class="font-medium">Regional managers</span><br><span class="text-slate-600 text-sm">Visibility into SLAs, renewals, and collections.</span></li>
+          <li class="rounded-xl border bg-white p-4"><span class="font-medium">Onsite teams</span><br><span class="text-slate-600 text-sm">Fewer tabs, faster resident responses.</span></li>
+          <li class="rounded-xl border bg-white p-4"><span class="font-medium">Vendors</span><br><span class="text-slate-600 text-sm">Clear work orders, quicker pay.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20">
+    <div class="mx-auto max-w-3xl px-4 text-center">
+      <h2 class="text-3xl font-bold tracking-tight">Let’s talk</h2>
+      <p class="mt-2 text-slate-600">Tell us about your portfolio and goals. We’ll share a tailored demo.</p>
+      <form class="mt-8 text-left grid gap-4" method="POST" action="#">
+        <!-- Replace action with your form backend endpoint (e.g., Formspree) when ready. -->
+        <div class="grid md:grid-cols-2 gap-4">
+          <input required type="text" name="name" placeholder="Your name" class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500" />
+          <input required type="email" name="email" placeholder="Email" class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500" />
+        </div>
+        <input type="text" name="company" placeholder="Company / Portfolio size" class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500" />
+        <textarea name="message" rows="5" placeholder="What problems are you trying to solve?" class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
+        <button type="submit" class="inline-flex justify-center rounded-xl bg-sky-600 px-6 py-3 text-white font-semibold shadow hover:bg-sky-700">Send message</button>
+        <p class="text-xs text-slate-500">By submitting, you agree to be contacted about Snowbird Services. We respect your privacy.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="py-8 border-t bg-white">
+    <div class="mx-auto max-w-7xl px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-600">
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5 text-sky-600" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M4.5 7.5l15 9M4.5 16.5l15-9M3 12h18"/></svg>
+        <span>© <span id="year"></span> Snowbird Services</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:text-sky-700">Privacy</a>
+        <a href="#" class="hover:text-sky-700">Terms</a>
+        <a href="mailto:hello@snowbirdservices.com" class="hover:text-sky-700">hello@snowbirdservices.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
