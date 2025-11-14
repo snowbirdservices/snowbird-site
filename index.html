@@ -3,180 +3,404 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Snowbird Services — Multifamily Property Technology</title>
+  <title>Snowbird Services — AI-First Multifamily Operations</title>
   <meta name="description" content="Snowbird Services builds modern property technology for the multifamily industry: AI leasing, maintenance automation, resident experience, credit reporting, and analytics." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    :root { color-scheme: light dark; }
+    :root { color-scheme: dark light; }
     body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
-    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,0.7); }
+    .glass {
+      backdrop-filter: blur(12px);
+      background: linear-gradient(135deg, rgba(15,23,42,0.8), rgba(15,23,42,0.4));
+      border: 1px solid rgba(148,163,184,0.35);
+    }
+    .card-soft {
+      background: radial-gradient(circle at top left, rgba(56,189,248,0.08), rgba(15,23,42,1));
+      border: 1px solid rgba(148,163,184,0.35);
+    }
   </style>
 </head>
-<body class="bg-gradient-to-b from-sky-50 to-white text-slate-800">
+<body class="min-h-screen bg-slate-950 text-slate-100">
   <!-- Top nav -->
-  <header class="sticky top-0 z-20 bg-white/70 backdrop-blur border-b border-slate-200">
-    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+  <header class="sticky top-0 z-30 border-b border-slate-800 bg-slate-950/85 backdrop-blur">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <a href="#home" class="flex items-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 text-sky-600" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M4.5 7.5l15 9M4.5 16.5l15-9M3 12h18"/>
-        </svg>
-        <span class="font-semibold tracking-tight">Snowbird Services</span>
+        <div class="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-tr from-sky-500 to-cyan-400 text-slate-950 shadow-lg shadow-sky-500/30">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M4.5 7.5l15 9M4.5 16.5l15-9M3 12h18"/>
+          </svg>
+        </div>
+        <span class="font-semibold tracking-tight text-slate-100">Snowbird Services</span>
       </a>
-      <nav class="hidden md:flex items-center gap-8 text-sm">
-        <a href="#features" class="hover:text-sky-700">Features</a>
-        <a href="#solutions" class="hover:text-sky-700">Solutions</a>
-        <a href="#contact" class="hover:text-sky-700">Contact</a>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-slate-300">
+        <a href="#features" class="hover:text-sky-400 transition">Platform</a>
+        <a href="#solutions" class="hover:text-sky-400 transition">For whom</a>
+        <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
       </nav>
-      <a href="#contact" class="hidden md:inline-flex items-center rounded-xl bg-sky-600 px-4 py-2 text-white text-sm font-medium shadow hover:bg-sky-700">Get in touch</a>
+      <a href="#contact" class="hidden md:inline-flex items-center rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-4 py-2 text-xs font-semibold text-slate-950 shadow-lg hover:shadow-sky-500/40 transition">
+        Request a demo
+      </a>
+      <button id="mobile-toggle" class="md:hidden inline-flex items-center justify-center rounded-full border border-slate-700 p-2 text-slate-200">
+        <span class="sr-only">Open navigation</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-slate-800 bg-slate-950/95">
+      <nav class="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-3 text-sm text-slate-200">
+        <a href="#features" class="hover:text-sky-400">Platform</a>
+        <a href="#solutions" class="hover:text-sky-400">For whom</a>
+        <a href="#contact" class="hover:text-sky-400">Contact</a>
+        <a href="#contact" class="mt-1 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-4 py-2 text-xs font-semibold text-slate-950">
+          Request a demo
+        </a>
+      </nav>
     </div>
   </header>
 
   <!-- Hero -->
   <section id="home" class="relative overflow-hidden">
-    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
-      <div class="absolute -top-24 right-[-10%] h-96 w-96 rounded-full blur-3xl opacity-30 bg-sky-300"></div>
-      <div class="absolute -bottom-24 left-[-10%] h-[28rem] w-[28rem] rounded-full blur-3xl opacity-20 bg-cyan-200"></div>
+    <!-- background accents -->
+    <div class="pointer-events-none absolute inset-0">
+      <div class="absolute -top-32 right-[-10%] h-80 w-80 rounded-full bg-sky-500/25 blur-3xl"></div>
+      <div class="absolute -bottom-40 left-[-10%] h-[28rem] w-[28rem] rounded-full bg-cyan-500/20 blur-3xl"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(148,163,184,0.45)_0,_transparent_55%)] opacity-40"></div>
     </div>
-    <div class="mx-auto max-w-7xl px-4 pt-16 pb-24">
-      <div class="grid md:grid-cols-2 gap-10 items-center">
-        <div class="md:text-left text-center max-w-xl mx-auto md:mx-0">
-          <span class="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white px-3 py-1 text-xs font-medium text-sky-700 shadow-sm">New • Multifamily PropTech</span>
-          <h1 class="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">Operate smarter with <span class="text-sky-700">AI-first</span> tools for multifamily</h1>
-          <p class="mt-4 text-slate-600 text-lg">Boost NOI with leasing automation, maintenance workflows, resident experience, and <span class="font-semibold text-sky-700">optional rent payment credit reporting</span>—without switching your PMS.</p>
-          <div class="mt-5 flex flex-wrap gap-3 justify-center md:justify-start">
-            <a href="#contact" class="inline-flex items-center rounded-xl bg-sky-600 px-5 py-3 text-white font-semibold shadow hover:bg-sky-700">Request a demo</a>
-            <a href="#features" class="inline-flex items-center rounded-xl bg-white px-5 py-3 font-semibold text-sky-700 border border-sky-200 hover:bg-sky-50">See features</a>
+
+    <div class="relative mx-auto max-w-6xl px-4 pt-14 pb-20 md:pb-28">
+      <div class="grid gap-12 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] items-center">
+        <!-- Left copy -->
+        <div class="max-w-xl">
+          <div class="inline-flex items-center gap-2 rounded-full border border-sky-500/40 bg-slate-900/80 px-3 py-1 text-[11px] font-medium text-sky-100 shadow-lg shadow-sky-500/10">
+            <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-sky-500/20 text-sky-300 text-xs">●</span>
+            <span>Built by multifamily owner-operators</span>
           </div>
-          <div class="mt-4 flex flex-wrap items-center justify-center md:justify-start gap-2 text-sm">
-            <span class="inline-flex items-center gap-2 rounded-full bg-white border border-slate-200 px-3 py-1">📊 <span>Credit reporting for on-time rent*</span></span>
-            <span class="inline-flex items-center gap-2 rounded-full bg-white border border-slate-200 px-3 py-1">🕒 <span>24/7 leasing copilot</span></span>
-            <span class="inline-flex items-center gap-2 rounded-full bg-white border border-slate-200 px-3 py-1">🛠️ <span>Maintenance triage</span></span>
+
+          <h1 class="mt-5 text-3.5xl md:text-5xl font-extrabold tracking-tight leading-tight text-slate-50">
+            Operate smarter with
+            <span class="bg-gradient-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent">AI-first</span>
+            tools for multifamily
+          </h1>
+
+          <p class="mt-4 text-sm md:text-base text-slate-300">
+            Boost NOI with leasing automation, maintenance workflows, resident experience, and
+            <span class="font-semibold text-sky-200">optional rent payment credit reporting</span>
+            — without switching your PMS.
+          </p>
+
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#contact" class="inline-flex items-center rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 shadow-xl shadow-sky-500/30 hover:shadow-sky-400/40 transition">
+              Request a portfolio demo
+            </a>
+            <a href="#features" class="inline-flex items-center rounded-full border border-slate-700 bg-slate-900/60 px-5 py-3 text-sm font-semibold text-slate-100 hover:border-sky-500/60 hover:text-sky-100 transition">
+              Explore the platform
+            </a>
           </div>
-          <p class="mt-3 text-xs text-slate-500">*Requires resident consent; bureau availability may vary.</p>
+
+          <div class="mt-6 flex flex-wrap gap-2 text-[11px] text-slate-300">
+            <span class="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1">
+              📊 <span>Credit reporting for on-time rent*</span>
+            </span>
+            <span class="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1">
+              🕒 <span>24/7 leasing copilot</span>
+            </span>
+            <span class="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1">
+              🛠️ <span>Maintenance triage</span>
+            </span>
+          </div>
+
+          <p class="mt-3 text-[10px] text-slate-500">
+            *Requires resident consent; bureau availability may vary.
+          </p>
         </div>
+
+        <!-- Right "product" panel -->
         <div class="relative">
-          <div class="glass rounded-3xl border border-slate-200 shadow-2xl p-6">
-            <div class="grid grid-cols-2 gap-4 text-sm">
-              <div class="rounded-2xl border p-4 bg-white">
-                <p class="font-semibold">Leasing copilot</p>
-                <p class="text-slate-600">Answers 24/7, qualifies, books tours.</p>
+          <div class="glass rounded-3xl p-6 shadow-2xl">
+            <div class="flex items-center justify-between gap-2">
+              <div>
+                <p class="text-[11px] uppercase tracking-[0.18em] text-slate-400">Snowbird overview</p>
+                <p class="mt-1 text-sm font-semibold text-slate-50">Command center for on-site & regional teams</p>
               </div>
-              <div class="rounded-2xl border p-4 bg-white">
-                <p class="font-semibold">Maintenance triage</p>
-                <p class="text-slate-600">Routes vendors, tracks SLAs.</p>
+              <span class="inline-flex items-center gap-1 rounded-full bg-slate-900/70 px-2.5 py-1 text-[10px] text-slate-300 border border-slate-700">
+                <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                Live AI copilot
+              </span>
+            </div>
+
+            <div class="mt-5 grid grid-cols-2 gap-4 text-xs">
+              <div class="card-soft rounded-2xl p-4">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="text-[11px] font-semibold text-sky-100">Leasing copilot</span>
+                  <span class="rounded-full bg-slate-900/60 px-2 py-0.5 text-[10px] text-slate-300 border border-slate-700/70">
+                    24/7
+                  </span>
+                </div>
+                <p class="mt-2 text-[11px] text-slate-300">
+                  Answers across web, ILS, SMS and email; qualifies leads and books tours directly to your calendar.
+                </p>
               </div>
-              <div class="rounded-2xl border p-4 bg-white">
-                <p class="font-semibold">Invoice AI</p>
-                <p class="text-slate-600">OCR → GL coding in clicks.</p>
+
+              <div class="card-soft rounded-2xl p-4">
+                <span class="text-[11px] font-semibold text-sky-100">Maintenance triage</span>
+                <p class="mt-2 text-[11px] text-slate-300">
+                  Photo/video intake, issue categorization, escalation rules, vendor dispatch and SLA tracking.
+                </p>
               </div>
-              <div class="rounded-2xl border p-4 bg-white">
-                <p class="font-semibold">Resident comms</p>
-                <p class="text-slate-600">Email/SMS in one inbox.</p>
+
+              <div class="card-soft rounded-2xl p-4">
+                <span class="text-[11px] font-semibold text-sky-100">Invoice AI</span>
+                <p class="mt-2 text-[11px] text-slate-300">
+                  OCR → GL coding in clicks. Designed for property management AP workflows and approvals.
+                </p>
+              </div>
+
+              <div class="card-soft rounded-2xl p-4">
+                <span class="text-[11px] font-semibold text-sky-100">Resident comms</span>
+                <p class="mt-2 text-[11px] text-slate-300">
+                  Central inbox for email and SMS so nothing falls through the cracks during turns or renewals.
+                </p>
               </div>
             </div>
-            <div class="mt-4 text-xs text-slate-500">Integrates with AppFolio, Yardi, RealPage via API/webhooks.*</div>
+
+            <div class="mt-5 flex items-center justify-between gap-2 text-[11px] text-slate-400">
+              <p>Integrates with AppFolio, Yardi, RealPage via API/webhooks.*</p>
+              <span class="rounded-full border border-slate-700 px-2 py-0.5 text-[10px] text-slate-300">
+                No PMS rip-and-replace
+              </span>
+            </div>
           </div>
-          <p class="mt-2 text-[11px] text-slate-400">*Logos and trademarks are property of their owners.</p>
+          <p class="mt-2 text-[10px] text-slate-500">*Logos and trademarks are property of their owners.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Features -->
-  <section id="features" class="py-20 bg-white">
-    <div class="mx-auto max-w-7xl px-4">
-      <div class="max-w-3xl md:text-left text-center mx-auto md:mx-0">
-        <h2 class="text-3xl font-bold tracking-tight">Everything you need to run lean</h2>
-        <p class="mt-3 text-slate-600">Pick the wedge you need now—add the rest later.</p>
+  <!-- Features / Platform -->
+  <section id="features" class="border-t border-slate-800 bg-slate-950">
+    <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
+      <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div class="max-w-xl">
+          <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-400">Platform</p>
+          <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-50">
+            Everything you need to run lean
+          </h2>
+          <p class="mt-3 text-sm md:text-base text-slate-300">
+            Start with the wedge you need now — add the rest when your portfolio is ready.
+          </p>
+        </div>
+        <div class="text-xs text-slate-400 max-w-sm">
+          Designed for 100–10,000+ units. Snowbird layers on top of your PMS so you can pilot at one property and scale portfolio-wide.
+        </div>
       </div>
-      <div class="mt-10 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6">
-        <div class="rounded-2xl border p-6">
-          <div class="h-10 w-10 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center mb-3">📈</div>
-          <h3 class="font-semibold">AI Leasing</h3>
-          <p class="mt-2 text-slate-600">Omnichannel assistant that responds, qualifies, quotes and schedules tours.</p>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-4 sm:grid-cols-2">
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+          <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500/10 text-lg">
+            📈
+          </div>
+          <h3 class="font-semibold text-slate-50 text-sm">AI Leasing</h3>
+          <p class="mt-2 text-xs md:text-sm text-slate-300">
+            Omnichannel assistant that responds, qualifies, quotes, and schedules tours — without adding headcount.
+          </p>
         </div>
-        <div class="rounded-2xl border p-6">
-          <div class="h-10 w-10 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center mb-3">🛠️</div>
-          <h3 class="font-semibold">Maintenance</h3>
-          <p class="mt-2 text-slate-600">Photo/video intake, vendor dispatch, parts & labor capture, SLA timers.</p>
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+          <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500/10 text-lg">
+            🛠️
+          </div>
+          <h3 class="font-semibold text-slate-50 text-sm">Maintenance</h3>
+          <p class="mt-2 text-xs md:text-sm text-slate-300">
+            Smart intake, vendor dispatch, parts & labor capture, and SLA timers so tickets actually close on time.
+          </p>
         </div>
-        <div class="rounded-2xl border p-6">
-          <div class="h-10 w-10 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center mb-3">💳</div>
-          <h3 class="font-semibold">Billing & AP</h3>
-          <p class="mt-2 text-slate-600">Charge schedule automation, ACH/Card collection, invoice OCR and approvals.</p>
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+          <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500/10 text-lg">
+            💳
+          </div>
+          <h3 class="font-semibold text-slate-50 text-sm">Billing & AP</h3>
+          <p class="mt-2 text-xs md:text-sm text-slate-300">
+            Charge schedule automation, ACH/card collection, invoice OCR and approvals tuned to multifamily workflows.
+          </p>
         </div>
-        <div class="rounded-2xl border p-6">
-          <div class="h-10 w-10 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center mb-3">📊</div>
-          <h3 class="font-semibold">Credit Reporting</h3>
-          <p class="mt-2 text-slate-600">Report on-time rent to major credit bureaus to help residents build credit responsibly.*</p>
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+          <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500/10 text-lg">
+            📊
+          </div>
+          <h3 class="font-semibold text-slate-50 text-sm">Credit Reporting</h3>
+          <p class="mt-2 text-xs md:text-sm text-slate-300">
+            Report on-time rent to major credit bureaus to help residents build credit responsibly.* Clear consent & opt-out.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Solutions -->
-  <section id="solutions" class="py-20 bg-sky-50">
-    <div class="mx-auto max-w-7xl px-4">
-      <div class="grid md:grid-cols-3 gap-8 items-start">
+  <!-- Solutions / Who it's for -->
+  <section id="solutions" class="border-t border-slate-800 bg-slate-950">
+    <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
+      <div class="grid gap-10 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.3fr)] items-start">
         <div>
-          <h2 class="text-3xl font-bold tracking-tight">Built for multifamily owners & operators</h2>
-          <p class="mt-3 text-slate-600">From 100 to 10,000+ units. Start with one property, scale portfolio-wide.</p>
+          <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-400">Who we serve</p>
+          <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-50">
+            Built for multifamily owners & operators
+          </h2>
+          <p class="mt-3 text-sm md:text-base text-slate-300">
+            From 100 to 10,000+ units, Snowbird helps owner-operators and third-party managers run tight, resident-friendly operations.
+          </p>
+          <ul class="mt-6 space-y-3 text-sm text-slate-300">
+            <li class="flex gap-2">
+              <span class="mt-1 h-1.5 w-1.5 rounded-full bg-sky-400"></span>
+              <span>Pilot at a single property, then standardize playbooks portfolio-wide.</span>
+            </li>
+            <li class="flex gap-2">
+              <span class="mt-1 h-1.5 w-1.5 rounded-full bg-sky-400"></span>
+              <span>Give onsite teams fewer tabs and fewer “what’s the status?” calls.</span>
+            </li>
+            <li class="flex gap-2">
+              <span class="mt-1 h-1.5 w-1.5 rounded-full bg-sky-400"></span>
+              <span>Provide residents with modern, transparent communication and optional credit-building.</span>
+            </li>
+          </ul>
         </div>
-        <ul class="md:col-span-2 grid sm:grid-cols-2 gap-4">
-          <li class="rounded-xl border bg-white p-4"><span class="font-medium">Owner-operators</span><br><span class="text-slate-600 text-sm">Self-managed portfolios seeking NOI lift.</span></li>
-          <li class="rounded-xl border bg-white p-4"><span class="font-medium">Regional managers</span><br><span class="text-slate-600 text-sm">Visibility into SLAs, renewals, and collections.</span></li>
-          <li class="rounded-xl border bg-white p-4"><span class="font-medium">Onsite teams</span><br><span class="text-slate-600 text-sm">Fewer tabs, faster resident responses.</span></li>
-          <li class="rounded-xl border bg-white p-4"><span class="font-medium">Residents</span><br><span class="text-slate-600 text-sm">Optional rent payment credit reporting with clear consent and opt-out.</span></li>
+
+        <ul class="grid gap-4 sm:grid-cols-2">
+          <li class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4">
+            <span class="text-sm font-semibold text-slate-50">Owner-operators</span><br>
+            <span class="mt-1 block text-xs text-slate-300">Self-managed portfolios looking for NOI lift without adding headcount.</span>
+          </li>
+          <li class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4">
+            <span class="text-sm font-semibold text-slate-50">Regional managers</span><br>
+            <span class="mt-1 block text-xs text-slate-300">Portfolio-level visibility into SLAs, renewals, delinquency, and collections.</span>
+          </li>
+          <li class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4">
+            <span class="text-sm font-semibold text-slate-50">Onsite teams</span><br>
+            <span class="mt-1 block text-xs text-slate-300">Cleaner queues, fewer systems, faster responses to residents and vendors.</span>
+          </li>
+          <li class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4">
+            <span class="text-sm font-semibold text-slate-50">Residents</span><br>
+            <span class="mt-1 block text-xs text-slate-300">Optional rent payment credit reporting with clear consent and easy opt-out.</span>
+          </li>
         </ul>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-20">
-    <div class="mx-auto max-w-3xl px-4 text-center">
-      <h2 class="text-3xl font-bold tracking-tight">Let’s talk</h2>
-      <p class="mt-2 text-slate-600">Tell us about your portfolio and goals. We’ll share a tailored demo.</p>
-      <form class="mt-8 text-left grid gap-4"
-      method="POST"
-      action="https://formspree.io/f/xrbredko"
-      accept-charset="UTF-8">
-  <input type="hidden" name="_subject" value="New Snowbird inquiry">
-  <!-- Optional: redirect to a thank-you page after submit -->
-  <!-- <input type="hidden" name="_redirect" value="https://www.snowbird-services.com/thank-you.html"> -->
-  <!-- Optional honeypot anti-spam (should stay hidden) -->
-  <input type="text" name="_gotcha" style="display:none">
-        <div class="grid md:grid-cols-2 gap-4">
-          <input required type="text" name="name" placeholder="Your name" class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500" />
-          <input required type="email" name="email" placeholder="Email" class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500" />
-        </div>
-        <input type="text" name="company" placeholder="Company / Portfolio size" class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500" />
-        <textarea name="message" rows="5" placeholder="What problems are you trying to solve? (e.g., credit reporting for on-time rent)" class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
-        <button type="submit" class="inline-flex justify-center rounded-xl bg-sky-600 px-6 py-3 text-white font-semibold shadow hover:bg-sky-700">Send message</button>
-        <p class="text-xs text-slate-500">By submitting, you agree to be contacted about Snowbird Services. We respect your privacy.</p>
-      </form>
+  <section id="contact" class="border-t border-slate-800 bg-slate-950">
+    <div class="mx-auto max-w-4xl px-4 py-16 md:py-20">
+      <div class="mx-auto max-w-xl text-center">
+        <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-400">Get in touch</p>
+        <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-50">Let’s talk</h2>
+        <p class="mt-3 text-sm md:text-base text-slate-300">
+          Tell us about your portfolio and goals. We’ll share a tailored demo and implementation path.
+        </p>
+      </div>
+
+      <div class="mt-8 rounded-3xl border border-slate-800 bg-slate-950/80 p-5 md:p-7">
+        <form
+          class="grid gap-4 text-left"
+          method="POST"
+          action="https://formspree.io/f/xrbredko"
+          accept-charset="UTF-8"
+        >
+          <input type="hidden" name="_subject" value="New Snowbird inquiry">
+          <!-- Optional: redirect to a thank-you page after submit -->
+          <!-- <input type="hidden" name="_redirect" value="https://www.snowbird-services.com/thank-you.html"> -->
+          <!-- Optional honeypot anti-spam (should stay hidden) -->
+          <input type="text" name="_gotcha" style="display:none">
+
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">Your name</label>
+              <input
+                required
+                type="text"
+                name="name"
+                placeholder="Jane Doe"
+                class="w-full rounded-xl border border-slate-700 bg-slate-900/70 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500"
+              />
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">Email</label>
+              <input
+                required
+                type="email"
+                name="email"
+                placeholder="you@company.com"
+                class="w-full rounded-xl border border-slate-700 bg-slate-900/70 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">Company / Portfolio size</label>
+            <input
+              type="text"
+              name="company"
+              placeholder="e.g., 850 units across 3 properties"
+              class="w-full rounded-xl border border-slate-700 bg-slate-900/70 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500"
+            />
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">What problems are you trying to solve?</label>
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="e.g., automate leasing responses and offer credit reporting for on-time rent while keeping our existing PMS…"
+              class="w-full rounded-xl border border-slate-700 bg-slate-900/70 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="inline-flex justify-center rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 shadow-xl shadow-sky-500/30 hover:shadow-sky-400/40 transition"
+          >
+            Send message
+          </button>
+          <p class="text-[11px] text-slate-500">
+            By submitting, you agree to be contacted about Snowbird Services. We respect your privacy.
+          </p>
+        </form>
+      </div>
     </div>
   </section>
 
-  <footer class="py-8 border-t bg-white">
-    <div class="mx-auto max-w-7xl px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-600">
+  <footer class="border-t border-slate-800 bg-slate-950 py-6">
+    <div class="mx-auto max-w-6xl px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] md:text-xs text-slate-400">
       <div class="flex items-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5 text-sky-600" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M4.5 7.5l15 9M4.5 16.5l15-9M3 12h18"/></svg>
-        <span>© <span id="year"></span> Snowbird Services</span>
+        <div class="flex h-6 w-6 items-center justify-center rounded-lg bg-slate-900 border border-slate-700 text-sky-300">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M4.5 7.5l15 9M4.5 16.5l15-9M3 12h18"/>
+          </svg>
+        </div>
+        <span>© <span id="year"></span> Snowbird Services. All rights reserved.</span>
       </div>
       <div class="flex items-center gap-4">
-        <a href="#" class="hover:text-sky-700">Privacy</a>
-        <a href="#" class="hover:text-sky-700">Terms</a>
-        <a href="mailto:info@snowbirdservices.com" class="hover:text-sky-700">info@snowbirdservices.com</a>
+        <a href="#" class="hover:text-sky-400">Privacy</a>
+        <a href="#" class="hover:text-sky-400">Terms</a>
+        <a href="mailto:info@snowbirdservices.com" class="hover:text-sky-400">info@snowbirdservices.com</a>
       </div>
     </div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    const toggle = document.getElementById('mobile-toggle');
+    const menu = document.getElementById('mobile-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
   </script>
 </body>
 </html>
