@@ -20,7 +20,6 @@
   <header class="sticky top-0 z-20 bg-white/70 backdrop-blur border-b border-slate-200">
     <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
       <a href="#home" class="flex items-center gap-2">
-        <!-- Simple snowflake mark -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 text-sky-600" fill="none" stroke="currentColor" stroke-width="1.5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M4.5 7.5l15 9M4.5 16.5l15-9M3 12h18"/>
         </svg>
@@ -43,15 +42,20 @@
     </div>
     <div class="mx-auto max-w-7xl px-4 pt-16 pb-24">
       <div class="grid md:grid-cols-2 gap-10 items-center">
-        <div>
+        <div class="md:text-left text-center max-w-xl mx-auto md:mx-0">
           <span class="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white px-3 py-1 text-xs font-medium text-sky-700 shadow-sm">New • Multifamily PropTech</span>
           <h1 class="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">Operate smarter with <span class="text-sky-700">AI-first</span> tools for multifamily</h1>
-          <p class="mt-4 text-slate-600 text-lg">Snowbird Services helps owners and operators boost NOI with leasing automation, maintenance workflows, and resident experience—without switching your PMS.</p>
-          <div class="mt-6 flex flex-wrap gap-3">
+          <p class="mt-4 text-slate-600 text-lg">Boost NOI with leasing automation, maintenance workflows, resident experience, and <span class="font-semibold text-sky-700">optional rent payment credit reporting</span>—without switching your PMS.</p>
+          <div class="mt-5 flex flex-wrap gap-3 justify-center md:justify-start">
             <a href="#contact" class="inline-flex items-center rounded-xl bg-sky-600 px-5 py-3 text-white font-semibold shadow hover:bg-sky-700">Request a demo</a>
             <a href="#features" class="inline-flex items-center rounded-xl bg-white px-5 py-3 font-semibold text-sky-700 border border-sky-200 hover:bg-sky-50">See features</a>
           </div>
-          <p class="mt-4 text-xs text-slate-500">Trusted by owner-operators. Built by multifamily veterans.</p>
+          <div class="mt-4 flex flex-wrap items-center justify-center md:justify-start gap-2 text-sm">
+            <span class="inline-flex items-center gap-2 rounded-full bg-white border border-slate-200 px-3 py-1">📊 <span>Credit reporting for on-time rent*</span></span>
+            <span class="inline-flex items-center gap-2 rounded-full bg-white border border-slate-200 px-3 py-1">🕒 <span>24/7 leasing copilot</span></span>
+            <span class="inline-flex items-center gap-2 rounded-full bg-white border border-slate-200 px-3 py-1">🛠️ <span>Maintenance triage</span></span>
+          </div>
+          <p class="mt-3 text-xs text-slate-500">*Requires resident consent; bureau availability may vary.</p>
         </div>
         <div class="relative">
           <div class="glass rounded-3xl border border-slate-200 shadow-2xl p-6">
@@ -81,7 +85,14 @@
     </div>
   </section>
 
-  $1
+  <!-- Features -->
+  <section id="features" class="py-20 bg-white">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="max-w-3xl md:text-left text-center mx-auto md:mx-0">
+        <h2 class="text-3xl font-bold tracking-tight">Everything you need to run lean</h2>
+        <p class="mt-3 text-slate-600">Pick the wedge you need now—add the rest later.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6">
         <div class="rounded-2xl border p-6">
           <div class="h-10 w-10 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center mb-3">📈</div>
           <h3 class="font-semibold">AI Leasing</h3>
@@ -97,8 +108,19 @@
           <h3 class="font-semibold">Billing & AP</h3>
           <p class="mt-2 text-slate-600">Charge schedule automation, ACH/Card collection, invoice OCR and approvals.</p>
         </div>
-        <div class="rounded-2xl border p$1
-          <li class="rounded-xl border bg-white p-4"><span class="font-medium">Residents</span><br><span class="text-slate-600 text-sm">Optional rent payment credit reporting with clear consent and opt-out.</span></li>     <div class="grid md:grid-cols-3 gap-8 items-start">
+        <div class="rounded-2xl border p-6">
+          <div class="h-10 w-10 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center mb-3">📊</div>
+          <h3 class="font-semibold">Credit Reporting</h3>
+          <p class="mt-2 text-slate-600">Report on-time rent to major credit bureaus to help residents build credit responsibly.*</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions -->
+  <section id="solutions" class="py-20 bg-sky-50">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="grid md:grid-cols-3 gap-8 items-start">
         <div>
           <h2 class="text-3xl font-bold tracking-tight">Built for multifamily owners & operators</h2>
           <p class="mt-3 text-slate-600">From 100 to 10,000+ units. Start with one property, scale portfolio-wide.</p>
@@ -107,7 +129,7 @@
           <li class="rounded-xl border bg-white p-4"><span class="font-medium">Owner-operators</span><br><span class="text-slate-600 text-sm">Self-managed portfolios seeking NOI lift.</span></li>
           <li class="rounded-xl border bg-white p-4"><span class="font-medium">Regional managers</span><br><span class="text-slate-600 text-sm">Visibility into SLAs, renewals, and collections.</span></li>
           <li class="rounded-xl border bg-white p-4"><span class="font-medium">Onsite teams</span><br><span class="text-slate-600 text-sm">Fewer tabs, faster resident responses.</span></li>
-          <li class="rounded-xl border bg-white p-4"><span class="font-medium">Vendors</span><br><span class="text-slate-600 text-sm">Clear work orders, quicker pay.</span></li>
+          <li class="rounded-xl border bg-white p-4"><span class="font-medium">Residents</span><br><span class="text-slate-600 text-sm">Optional rent payment credit reporting with clear consent and opt-out.</span></li>
         </ul>
       </div>
     </div>
@@ -119,7 +141,6 @@
       <h2 class="text-3xl font-bold tracking-tight">Let’s talk</h2>
       <p class="mt-2 text-slate-600">Tell us about your portfolio and goals. We’ll share a tailored demo.</p>
       <form class="mt-8 text-left grid gap-4" method="POST" action="#">
-        <!-- Replace action with your form backend endpoint (e.g., Formspree) when ready. -->
         <div class="grid md:grid-cols-2 gap-4">
           <input required type="text" name="name" placeholder="Your name" class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500" />
           <input required type="email" name="email" placeholder="Email" class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500" />
