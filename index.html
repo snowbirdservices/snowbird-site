@@ -25,7 +25,7 @@
     }
   </style>
 </head>
-<body class="min-h-screen bg-slate-950 text-slate-50 relative overflow-hidden">
+<body class="min-h-screen bg-slate-950 text-slate-50 relative">
 
   <!-- Large faint tech-style snowflake background -->
   <div class="pointer-events-none absolute inset-0 flex items-center justify-center -z-10 opacity-[0.08]">
@@ -53,24 +53,13 @@
   <header class="sticky top-0 z-30 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <a href="#home" class="flex items-center gap-2">
-        <div class="flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-tr from-emerald-400 via-sky-500 to-cyan-300 text-slate-950 shadow-lg shadow-emerald-400/30">
-          <!-- SaaS-style snowflake logo -->
-          <svg xmlns="http://www.w3.org/2000/svg"
-               viewBox="0 0 24 24"
-               class="h-5 w-5"
-               fill="none"
-               stroke="currentColor"
-               stroke-width="1.8"
-               stroke-linecap="round"
-               stroke-linejoin="round">
-            <path d="M12 5.2l4.1 2.4v4.8L12 14.8l-4.1-2.4V7.6z" />
-            <line x1="12" y1="2"  x2="12" y2="5.2" />
-            <line x1="12" y1="14.8" x2="12" y2="22" />
-            <line x1="5"  y1="5"  x2="7.4" y2="7.4" />
-            <line x1="16.6" y1="16.6" x2="19" y2="19" />
-            <line x1="5"  y1="19" x2="7.4" y2="16.6" />
-            <line x1="16.6" y1="7.4" x2="19"  y2="5" />
-          </svg>
+        <div class="flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-tr from-emerald-400 via-sky-500 to-cyan-300 text-slate-950 shadow-lg shadow-emerald-400/30 overflow-hidden">
+          <!-- Image logo -->
+          <img
+            src="https://chatgpt.com/s/m_6917a300aa3c81919304343adfc45d21"
+            alt="Snowbird Services logo"
+            class="h-6 w-6 object-contain"
+          />
         </div>
         <span class="font-semibold tracking-tight text-slate-50">Snowbird Services</span>
       </a>
@@ -507,24 +496,13 @@
   <footer class="border-t border-slate-800 bg-slate-950 py-6">
     <div class="mx-auto max-w-6xl px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] md:text-xs text-slate-400">
       <div class="flex items-center gap-2">
-        <div class="flex h-6 w-6 items-center justify-center rounded-lg bg-slate-900 border border-slate-700 text-emerald-300">
-          <!-- SaaS-style snowflake logo (footer) -->
-          <svg xmlns="http://www.w3.org/2000/svg"
-               viewBox="0 0 24 24"
-               class="h-4 w-4"
-               fill="none"
-               stroke="currentColor"
-               stroke-width="1.8"
-               stroke-linecap="round"
-               stroke-linejoin="round">
-            <path d="M12 5.2l4.1 2.4v4.8L12 14.8l-4.1-2.4V7.6z" />
-            <line x1="12" y1="2"  x2="12" y2="5.2" />
-            <line x1="12" y1="14.8" x2="12" y2="22" />
-            <line x1="5"  y1="5"  x2="7.4" y2="7.4" />
-            <line x1="16.6" y1="16.6" x2="19" y2="19" />
-            <line x1="5"  y1="19" x2="7.4" y2="16.6" />
-            <line x1="16.6" y1="7.4" x2="19"  y2="5" />
-          </svg>
+        <div class="flex h-6 w-6 items-center justify-center rounded-lg bg-slate-900 border border-slate-700 overflow-hidden">
+          <!-- Footer logo -->
+          <img
+            src="https://chatgpt.com/s/m_6917a300aa3c81919304343adfc45d21"
+            alt="Snowbird Services logo"
+            class="h-4 w-4 object-contain"
+          />
         </div>
         <span>© <span id="year"></span> Snowbird Services. All rights reserved.</span>
       </div>
