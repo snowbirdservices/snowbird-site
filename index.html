@@ -3,45 +3,48 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Snowbird Services — AI-First Multifamily Operations</title>
-  <meta name="description" content="Snowbird Services builds modern property technology for the multifamily industry: AI leasing, maintenance automation, resident experience, credit reporting, and analytics." />
+  <title>Snowbird Services — Rent Reporting & Utility Billback for Multifamily</title>
+  <meta name="description" content="Snowbird Services helps multifamily owners and property managers offer resident rent reporting to build credit scores while automating fair utility billback and expense recovery." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root { color-scheme: dark light; }
-    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+    }
     .glass {
-      backdrop-filter: blur(12px);
-      background: linear-gradient(135deg, rgba(15,23,42,0.8), rgba(15,23,42,0.4));
-      border: 1px solid rgba(148,163,184,0.35);
+      backdrop-filter: blur(16px);
+      background: radial-gradient(circle at top left, rgba(45,212,191,0.14), rgba(15,23,42,0.9));
+      border: 1px solid rgba(148,163,184,0.4);
     }
     .card-soft {
       background: radial-gradient(circle at top left, rgba(56,189,248,0.08), rgba(15,23,42,1));
-      border: 1px solid rgba(148,163,184,0.35);
+      border: 1px solid rgba(51,65,85,0.9);
     }
   </style>
 </head>
-<body class="min-h-screen bg-slate-950 text-slate-100">
+<body class="min-h-screen bg-slate-950 text-slate-50">
   <!-- Top nav -->
-  <header class="sticky top-0 z-30 border-b border-slate-800 bg-slate-950/85 backdrop-blur">
+  <header class="sticky top-0 z-30 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <a href="#home" class="flex items-center gap-2">
-        <div class="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-tr from-sky-500 to-cyan-400 text-slate-950 shadow-lg shadow-sky-500/30">
+        <div class="flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-tr from-emerald-400 via-sky-500 to-cyan-300 text-slate-950 shadow-lg shadow-emerald-400/30">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M4.5 7.5l15 9M4.5 16.5l15-9M3 12h18"/>
           </svg>
         </div>
-        <span class="font-semibold tracking-tight text-slate-100">Snowbird Services</span>
+        <span class="font-semibold tracking-tight text-slate-50">Snowbird Services</span>
       </a>
       <nav class="hidden md:flex items-center gap-8 text-sm text-slate-300">
-        <a href="#features" class="hover:text-sky-400 transition">Platform</a>
-        <a href="#solutions" class="hover:text-sky-400 transition">For whom</a>
-        <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
+        <a href="#rent-reporting" class="hover:text-emerald-400 transition">Rent reporting</a>
+        <a href="#billback" class="hover:text-emerald-400 transition">Utility billback</a>
+        <a href="#why" class="hover:text-emerald-400 transition">Why Snowbird</a>
+        <a href="#contact" class="hover:text-emerald-400 transition">Contact</a>
       </nav>
-      <a href="#contact" class="hidden md:inline-flex items-center rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-4 py-2 text-xs font-semibold text-slate-950 shadow-lg hover:shadow-sky-500/40 transition">
-        Request a demo
+      <a href="#contact" class="hidden md:inline-flex items-center rounded-full bg-gradient-to-r from-emerald-400 via-sky-500 to-cyan-300 px-4 py-2 text-xs font-semibold text-slate-950 shadow-lg shadow-emerald-400/40 hover:shadow-emerald-300/60 transition">
+        Schedule a demo
       </a>
       <button id="mobile-toggle" class="md:hidden inline-flex items-center justify-center rounded-full border border-slate-700 p-2 text-slate-200">
         <span class="sr-only">Open navigation</span>
@@ -52,11 +55,12 @@
     </div>
     <div id="mobile-menu" class="md:hidden hidden border-t border-slate-800 bg-slate-950/95">
       <nav class="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-3 text-sm text-slate-200">
-        <a href="#features" class="hover:text-sky-400">Platform</a>
-        <a href="#solutions" class="hover:text-sky-400">For whom</a>
-        <a href="#contact" class="hover:text-sky-400">Contact</a>
-        <a href="#contact" class="mt-1 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-4 py-2 text-xs font-semibold text-slate-950">
-          Request a demo
+        <a href="#rent-reporting" class="hover:text-emerald-400">Rent reporting</a>
+        <a href="#billback" class="hover:text-emerald-400">Utility billback</a>
+        <a href="#why" class="hover:text-emerald-400">Why Snowbird</a>
+        <a href="#contact" class="hover:text-emerald-400">Contact</a>
+        <a href="#contact" class="mt-1 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-emerald-400 via-sky-500 to-cyan-300 px-4 py-2 text-xs font-semibold text-slate-950">
+          Schedule a demo
         </a>
       </nav>
     </div>
@@ -66,55 +70,54 @@
   <section id="home" class="relative overflow-hidden">
     <!-- background accents -->
     <div class="pointer-events-none absolute inset-0">
-      <div class="absolute -top-32 right-[-10%] h-80 w-80 rounded-full bg-sky-500/25 blur-3xl"></div>
-      <div class="absolute -bottom-40 left-[-10%] h-[28rem] w-[28rem] rounded-full bg-cyan-500/20 blur-3xl"></div>
+      <div class="absolute -top-32 right-[-10%] h-80 w-80 rounded-full bg-emerald-400/25 blur-3xl"></div>
+      <div class="absolute -bottom-40 left-[-10%] h-[28rem] w-[28rem] rounded-full bg-sky-500/20 blur-3xl"></div>
       <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(148,163,184,0.45)_0,_transparent_55%)] opacity-40"></div>
     </div>
 
-    <div class="relative mx-auto max-w-6xl px-4 pt-14 pb-20 md:pb-28">
-      <div class="grid gap-12 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] items-center">
+    <div class="relative mx-auto max-w-6xl px-4 pt-14 pb-20 md:pb-24">
+      <div class="grid gap-12 lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] items-center">
         <!-- Left copy -->
         <div class="max-w-xl">
-          <div class="inline-flex items-center gap-2 rounded-full border border-sky-500/40 bg-slate-900/80 px-3 py-1 text-[11px] font-medium text-sky-100 shadow-lg shadow-sky-500/10">
-            <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-sky-500/20 text-sky-300 text-xs">●</span>
-            <span>Built by multifamily owner-operators</span>
+          <div class="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-slate-900/80 px-3 py-1 text-[11px] font-medium text-emerald-100 shadow-lg shadow-emerald-400/10">
+            <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-400/20 text-emerald-200 text-xs">●</span>
+            <span>For multifamily owners & property managers</span>
           </div>
 
           <h1 class="mt-5 text-3.5xl md:text-5xl font-extrabold tracking-tight leading-tight text-slate-50">
-            Operate smarter with
-            <span class="bg-gradient-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent">AI-first</span>
-            tools for multifamily
+            Help residents
+            <span class="bg-gradient-to-r from-emerald-400 via-sky-400 to-cyan-300 bg-clip-text text-transparent">build credit</span>
+            while you recover utilities fairly.
           </h1>
 
           <p class="mt-4 text-sm md:text-base text-slate-300">
-            Boost NOI with leasing automation, maintenance workflows, resident experience, and
-            <span class="font-semibold text-sky-200">optional rent payment credit reporting</span>
-            — without switching your PMS.
+            Snowbird plugs into your existing PMS to report on-time rent payments and automate utility billback—so residents see
+            real credit progress and you capture more NOI, whether you manage 20 units or 20,000.
           </p>
 
           <div class="mt-6 flex flex-wrap gap-3">
-            <a href="#contact" class="inline-flex items-center rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 shadow-xl shadow-sky-500/30 hover:shadow-sky-400/40 transition">
-              Request a portfolio demo
+            <a href="#contact" class="inline-flex items-center rounded-full bg-gradient-to-r from-emerald-400 via-sky-500 to-cyan-300 px-5 py-3 text-sm font-semibold text-slate-950 shadow-xl shadow-emerald-400/30 hover:shadow-emerald-300/50 transition">
+              Talk with our team
             </a>
-            <a href="#features" class="inline-flex items-center rounded-full border border-slate-700 bg-slate-900/60 px-5 py-3 text-sm font-semibold text-slate-100 hover:border-sky-500/60 hover:text-sky-100 transition">
-              Explore the platform
+            <a href="#rent-reporting" class="inline-flex items-center rounded-full border border-slate-700 bg-slate-900/60 px-5 py-3 text-sm font-semibold text-slate-100 hover:border-emerald-400/70 hover:text-emerald-100 transition">
+              See how rent reporting works
             </a>
           </div>
 
           <div class="mt-6 flex flex-wrap gap-2 text-[11px] text-slate-300">
             <span class="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1">
-              📊 <span>Credit reporting for on-time rent*</span>
+              📈 <span>Credit-building amenity for residents</span>
             </span>
             <span class="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1">
-              🕒 <span>24/7 leasing copilot</span>
+              💸 <span>Utility cost recovery & RUBS</span>
             </span>
             <span class="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1">
-              🛠️ <span>Maintenance triage</span>
+              🔌 <span>No PMS rip-and-replace</span>
             </span>
           </div>
 
           <p class="mt-3 text-[10px] text-slate-500">
-            *Requires resident consent; bureau availability may vary.
+            Program design can be tailored to your properties, markets, and resident profile.
           </p>
         </div>
 
@@ -123,109 +126,182 @@
           <div class="glass rounded-3xl p-6 shadow-2xl">
             <div class="flex items-center justify-between gap-2">
               <div>
-                <p class="text-[11px] uppercase tracking-[0.18em] text-slate-400">Snowbird overview</p>
-                <p class="mt-1 text-sm font-semibold text-slate-50">Command center for on-site & regional teams</p>
+                <p class="text-[11px] uppercase tracking-[0.18em] text-slate-400">Snowbird dashboard</p>
+                <p class="mt-1 text-sm font-semibold text-slate-50">Credit & utility recovery at a glance</p>
               </div>
               <span class="inline-flex items-center gap-1 rounded-full bg-slate-900/70 px-2.5 py-1 text-[10px] text-slate-300 border border-slate-700">
                 <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
-                Live AI copilot
+                Syncing with PMS
               </span>
             </div>
 
             <div class="mt-5 grid grid-cols-2 gap-4 text-xs">
               <div class="card-soft rounded-2xl p-4">
                 <div class="flex items-center justify-between gap-2">
-                  <span class="text-[11px] font-semibold text-sky-100">Leasing copilot</span>
+                  <span class="text-[11px] font-semibold text-emerald-100">Rent reporting</span>
                   <span class="rounded-full bg-slate-900/60 px-2 py-0.5 text-[10px] text-slate-300 border border-slate-700/70">
-                    24/7
+                    Credit lift
                   </span>
                 </div>
                 <p class="mt-2 text-[11px] text-slate-300">
-                  Answers across web, ILS, SMS and email; qualifies leads and books tours directly to your calendar.
+                  Pull payment history from your PMS and send on-time rent data to credit bureaus on a predictable cadence.
+                </p>
+                <div class="mt-3 flex items-center justify-between text-[10px] text-slate-400">
+                  <span>Enrollment & consent tracked</span>
+                  <span class="inline-flex items-center gap-1">
+                    <span class="h-1.5 w-1.5 rounded-full bg-emerald-400/90"></span>
+                    Active
+                  </span>
+                </div>
+              </div>
+
+              <div class="card-soft rounded-2xl p-4">
+                <span class="text-[11px] font-semibold text-sky-100">Utility billback</span>
+                <p class="mt-2 text-[11px] text-slate-300">
+                  Configure allocation rules for any size property and generate clean, resident-ready statements each month.
+                </p>
+                <div class="mt-3 text-[10px] text-slate-400">
+                  <span>Supports water, sewer, trash, gas, electric and more.</span>
+                </div>
+              </div>
+
+              <div class="card-soft rounded-2xl p-4">
+                <span class="text-[11px] font-semibold text-emerald-100">Compliance & audit trail</span>
+                <p class="mt-2 text-[11px] text-slate-300">
+                  Store consent records, program terms, and historical file submissions in one place for audits and regulators.
                 </p>
               </div>
 
               <div class="card-soft rounded-2xl p-4">
-                <span class="text-[11px] font-semibold text-sky-100">Maintenance triage</span>
+                <span class="text-[11px] font-semibold text-sky-100">Portfolio & property analytics</span>
                 <p class="mt-2 text-[11px] text-slate-300">
-                  Photo/video intake, issue categorization, escalation rules, vendor dispatch and SLA tracking.
-                </p>
-              </div>
-
-              <div class="card-soft rounded-2xl p-4">
-                <span class="text-[11px] font-semibold text-sky-100">Invoice AI</span>
-                <p class="mt-2 text-[11px] text-slate-300">
-                  OCR → GL coding in clicks. Designed for property management AP workflows and approvals.
-                </p>
-              </div>
-
-              <div class="card-soft rounded-2xl p-4">
-                <span class="text-[11px] font-semibold text-sky-100">Resident comms</span>
-                <p class="mt-2 text-[11px] text-slate-300">
-                  Central inbox for email and SMS so nothing falls through the cracks during turns or renewals.
+                  Track enrollment, credit-building engagement, recovery rates, and utilities as % of revenue across any mix of
+                  assets.
                 </p>
               </div>
             </div>
 
-            <div class="mt-5 flex items-center justify-between gap-2 text-[11px] text-slate-400">
-              <p>Integrates with AppFolio, Yardi, RealPage via API/webhooks.*</p>
+            <div class="mt-5 flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-400">
+              <p>Integrates with leading multifamily PMS platforms via API/webhooks.</p>
               <span class="rounded-full border border-slate-700 px-2 py-0.5 text-[10px] text-slate-300">
-                No PMS rip-and-replace
+                Works with small, mid-size, and large portfolios
               </span>
             </div>
           </div>
-          <p class="mt-2 text-[10px] text-slate-500">*Logos and trademarks are property of their owners.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Features / Platform -->
-  <section id="features" class="border-t border-slate-800 bg-slate-950">
+  <!-- Rent reporting -->
+  <section id="rent-reporting" class="border-t border-slate-800 bg-slate-950">
+    <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
+      <div class="grid gap-10 md:grid-cols-[minmax(0,1.2fr)_minmax(0,1.1fr)] items-start">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-300">Rent reporting</p>
+          <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-50">
+            Turn on-time rent into real credit history.
+          </h2>
+          <p class="mt-3 text-sm md:text-base text-slate-300">
+            For most residents, rent is their largest monthly payment—and it usually doesn’t count toward their credit score.
+            Snowbird lets you change that, without adding complicated processes for your onsite staff or management company.
+          </p>
+
+          <ul class="mt-6 space-y-3 text-sm text-slate-300">
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+              <span><span class="font-medium text-slate-50">Automatic reporting:</span> Pull rent payments from your PMS and send them through a controlled, auditable pipeline.</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+              <span><span class="font-medium text-slate-50">Resident-friendly enrollment:</span> Clear consent flow, simple explanations, and easy opt-out to align with regulations and build trust.</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+              <span><span class="font-medium text-slate-50">Amenity with impact:</span> Differentiate your communities while supporting resident financial health and retention.</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+              <span><span class="font-medium text-slate-50">Flexible program design:</span> Works for one duplex, a single asset, or a multi-state portfolio. Choose which charges to include and how to handle delinquencies.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-5">
+            <p class="text-xs font-semibold text-slate-200 mb-1">Resident view</p>
+            <p class="text-sm font-semibold text-slate-50">“My rent finally counts for something.”</p>
+            <p class="mt-3 text-xs text-slate-300">
+              Residents can see when their rent reporting is active, what’s being reported, and how to get support—all without
+              tying up your leasing office.
+            </p>
+            <div class="mt-4 grid grid-cols-2 gap-3 text-[11px]">
+              <div class="rounded-2xl border border-slate-800 bg-slate-950/60 p-3">
+                <p class="text-slate-400">Credit-building status</p>
+                <p class="mt-1 text-slate-100 font-semibold">On track</p>
+                <p class="mt-1 text-slate-400">Last rent reported: <span class="text-emerald-300">Paid on time</span></p>
+              </div>
+              <div class="rounded-2xl border border-slate-800 bg-slate-950/60 p-3">
+                <p class="text-slate-400">Enrollment</p>
+                <p class="mt-1 text-slate-100 font-semibold">Active</p>
+                <p class="mt-1 text-slate-400">Manage directly from resident portal.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-emerald-400/40 bg-emerald-400/5 p-4 text-[11px] text-emerald-100">
+            <p class="font-semibold text-xs">Works well for:</p>
+            <ul class="mt-2 space-y-1">
+              <li>• Independent owners and small PM companies</li>
+              <li>• Regional management companies and REITs</li>
+              <li>• Workforce, conventional, and affordable housing communities</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Utility billback -->
+  <section id="billback" class="border-t border-slate-800 bg-slate-950">
     <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
       <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
         <div class="max-w-xl">
-          <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-400">Platform</p>
+          <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-300">Utility billback</p>
           <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-50">
-            Everything you need to run lean
+            Recover utility spend without buried spreadsheets.
           </h2>
           <p class="mt-3 text-sm md:text-base text-slate-300">
-            Start with the wedge you need now — add the rest when your portfolio is ready.
+            Whether you run a handful of units on RUBS or multiple properties on full billback, Snowbird helps you allocate costs
+            fairly, generate clean statements, and keep residents informed.
           </p>
         </div>
         <div class="text-xs text-slate-400 max-w-sm">
-          Designed for 100–10,000+ units. Snowbird layers on top of your PMS so you can pilot at one property and scale portfolio-wide.
+          Start on the property where utilities are hurting NOI the most, then standardize your approach across the rest of your
+          portfolio at your own pace.
         </div>
       </div>
 
-      <div class="mt-10 grid gap-6 md:grid-cols-4 sm:grid-cols-2">
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
         <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
           <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500/10 text-lg">
-            📈
+            💧
           </div>
-          <h3 class="font-semibold text-slate-50 text-sm">AI Leasing</h3>
+          <h3 class="font-semibold text-slate-50 text-sm">RUBS & allocation rules</h3>
           <p class="mt-2 text-xs md:text-sm text-slate-300">
-            Omnichannel assistant that responds, qualifies, quotes, and schedules tours — without adding headcount.
+            Configure allocation by occupants, square footage, bedrooms, or hybrid formulas. Apply consistent rules—from one
+            small building to many—without redoing the math each month.
           </p>
         </div>
 
         <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
           <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500/10 text-lg">
-            🛠️
+            📄
           </div>
-          <h3 class="font-semibold text-slate-50 text-sm">Maintenance</h3>
+          <h3 class="font-semibold text-slate-50 text-sm">Resident-ready statements</h3>
           <p class="mt-2 text-xs md:text-sm text-slate-300">
-            Smart intake, vendor dispatch, parts & labor capture, and SLA timers so tickets actually close on time.
-          </p>
-        </div>
-
-        <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
-          <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500/10 text-lg">
-            💳
-          </div>
-          <h3 class="font-semibold text-slate-50 text-sm">Billing & AP</h3>
-          <p class="mt-2 text-xs md:text-sm text-slate-300">
-            Charge schedule automation, ACH/card collection, invoice OCR and approvals tuned to multifamily workflows.
+            Generate billing files and statements that clearly separate rent and utilities, with explanations your residents can
+            actually understand, cutting down on “why is my bill this amount?” calls.
           </p>
         </div>
 
@@ -233,61 +309,68 @@
           <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500/10 text-lg">
             📊
           </div>
-          <h3 class="font-semibold text-slate-50 text-sm">Credit Reporting</h3>
+          <h3 class="font-semibold text-slate-50 text-sm">Recovery & compliance</h3>
           <p class="mt-2 text-xs md:text-sm text-slate-300">
-            Report on-time rent to major credit bureaus to help residents build credit responsibly.* Clear consent & opt-out.
+            Track recovery rates, flags, and exceptions by property. Export audit-friendly reports for owners, regulators, and
+            utility providers—no matter how many units sit behind them.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Solutions / Who it's for -->
-  <section id="solutions" class="border-t border-slate-800 bg-slate-950">
+  <!-- Why Snowbird -->
+  <section id="why" class="border-t border-slate-800 bg-slate-950">
     <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
-      <div class="grid gap-10 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.3fr)] items-start">
-        <div>
-          <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-400">Who we serve</p>
-          <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-50">
-            Built for multifamily owners & operators
-          </h2>
-          <p class="mt-3 text-sm md:text-base text-slate-300">
-            From 100 to 10,000+ units, Snowbird helps owner-operators and third-party managers run tight, resident-friendly operations.
-          </p>
-          <ul class="mt-6 space-y-3 text-sm text-slate-300">
-            <li class="flex gap-2">
-              <span class="mt-1 h-1.5 w-1.5 rounded-full bg-sky-400"></span>
-              <span>Pilot at a single property, then standardize playbooks portfolio-wide.</span>
-            </li>
-            <li class="flex gap-2">
-              <span class="mt-1 h-1.5 w-1.5 rounded-full bg-sky-400"></span>
-              <span>Give onsite teams fewer tabs and fewer “what’s the status?” calls.</span>
-            </li>
-            <li class="flex gap-2">
-              <span class="mt-1 h-1.5 w-1.5 rounded-full bg-sky-400"></span>
-              <span>Provide residents with modern, transparent communication and optional credit-building.</span>
-            </li>
-          </ul>
-        </div>
+      <div class="max-w-2xl">
+        <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-300">Why Snowbird</p>
+        <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-50">
+          Built by multifamily operators, for owners and property managers.
+        </h2>
+        <p class="mt-3 text-sm md:text-base text-slate-300">
+          We’ve lived the spreadsheets, the call queues, and the “why doesn’t my rent help my credit?” conversations. Snowbird is
+          designed to work the way independent owners, property management companies, and onsite teams actually operate.
+        </p>
+      </div>
 
-        <ul class="grid gap-4 sm:grid-cols-2">
-          <li class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4">
-            <span class="text-sm font-semibold text-slate-50">Owner-operators</span><br>
-            <span class="mt-1 block text-xs text-slate-300">Self-managed portfolios looking for NOI lift without adding headcount.</span>
-          </li>
-          <li class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4">
-            <span class="text-sm font-semibold text-slate-50">Regional managers</span><br>
-            <span class="mt-1 block text-xs text-slate-300">Portfolio-level visibility into SLAs, renewals, delinquency, and collections.</span>
-          </li>
-          <li class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4">
-            <span class="text-sm font-semibold text-slate-50">Onsite teams</span><br>
-            <span class="mt-1 block text-xs text-slate-300">Cleaner queues, fewer systems, faster responses to residents and vendors.</span>
-          </li>
-          <li class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4">
-            <span class="text-sm font-semibold text-slate-50">Residents</span><br>
-            <span class="mt-1 block text-xs text-slate-300">Optional rent payment credit reporting with clear consent and easy opt-out.</span>
-          </li>
-        </ul>
+      <div class="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4">
+          <p class="text-xs font-semibold text-slate-200 mb-1">Owners & owner-operators</p>
+          <p class="text-xs text-slate-300">
+            Lift NOI with better recovery and new ancillary revenue while offering residents a tangible, measurable financial
+            benefit.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4">
+          <p class="text-xs font-semibold text-slate-200 mb-1">Property management companies</p>
+          <p class="text-xs text-slate-300">
+            Standardize rent reporting and utility programs across all owners you serve, while giving your teams clear playbooks.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4">
+          <p class="text-xs font-semibold text-slate-200 mb-1">Onsite teams</p>
+          <p class="text-xs text-slate-300">
+            Fewer systems and fewer escalations. One place to understand who’s enrolled, what’s billed, and how to explain it.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4">
+          <p class="text-xs font-semibold text-slate-200 mb-1">Residents</p>
+          <p class="text-xs text-slate-300">
+            Clear, opt-in programs that help rent and utilities work harder for their credit profile and financial goals.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4">
+          <p class="text-xs font-semibold text-slate-200 mb-1">Implementation</p>
+          <p class="text-xs text-slate-300">
+            Start with one property or one owner, refine your program, then roll out to additional communities on your timeline.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4">
+          <p class="text-xs font-semibold text-slate-200 mb-1">Support</p>
+          <p class="text-xs text-slate-300">
+            Operator-first support that can work directly with owners, PMCs, or both—whatever your management structure looks like.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -296,10 +379,11 @@
   <section id="contact" class="border-t border-slate-800 bg-slate-950">
     <div class="mx-auto max-w-4xl px-4 py-16 md:py-20">
       <div class="mx-auto max-w-xl text-center">
-        <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-400">Get in touch</p>
-        <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-50">Let’s talk</h2>
+        <p class="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-300">Get in touch</p>
+        <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-50">Tell us about your properties.</h2>
         <p class="mt-3 text-sm md:text-base text-slate-300">
-          Tell us about your portfolio and goals. We’ll share a tailored demo and implementation path.
+          Share a few details about your assets, markets, and goals. We’ll follow up with a tailored demo—whether you manage a
+          single building or a large portfolio.
         </p>
       </div>
 
@@ -324,7 +408,7 @@
                 type="text"
                 name="name"
                 placeholder="Jane Doe"
-                class="w-full rounded-xl border border-slate-700 bg-slate-900/70 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500"
+                class="w-full rounded-xl border border-slate-700 bg-slate-900/70 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400"
               />
             </div>
             <div>
@@ -334,18 +418,28 @@
                 type="email"
                 name="email"
                 placeholder="you@company.com"
-                class="w-full rounded-xl border border-slate-700 bg-slate-900/70 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500"
+                class="w-full rounded-xl border border-slate-700 bg-slate-900/70 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400"
               />
             </div>
           </div>
 
           <div>
-            <label class="block text-xs font-medium text-slate-300 mb-1">Company / Portfolio size</label>
+            <label class="block text-xs font-medium text-slate-300 mb-1">Company / Role</label>
             <input
               type="text"
               name="company"
-              placeholder="e.g., 850 units across 3 properties"
-              class="w-full rounded-xl border border-slate-700 bg-slate-900/70 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500"
+              placeholder="e.g., Owner, Property Manager, Regional, etc."
+              class="w-full rounded-xl border border-slate-700 bg-slate-900/70 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400"
+            />
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">Rough unit count (optional)</label>
+            <input
+              type="text"
+              name="portfolio"
+              placeholder="e.g., 24 units, 2 properties • 1,200 units, 8 properties"
+              class="w-full rounded-xl border border-slate-700 bg-slate-900/70 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400"
             />
           </div>
 
@@ -354,14 +448,14 @@
             <textarea
               name="message"
               rows="5"
-              placeholder="e.g., automate leasing responses and offer credit reporting for on-time rent while keeping our existing PMS…"
-              class="w-full rounded-xl border border-slate-700 bg-slate-900/70 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500"
+              placeholder="e.g., help residents build credit, recover utilities fairly, and standardize programs across owners or properties…"
+              class="w-full rounded-xl border border-slate-700 bg-slate-900/70 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400"
             ></textarea>
           </div>
 
           <button
             type="submit"
-            class="inline-flex justify-center rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 shadow-xl shadow-sky-500/30 hover:shadow-sky-400/40 transition"
+            class="inline-flex justify-center rounded-full bg-gradient-to-r from-emerald-400 via-sky-500 to-cyan-300 px-6 py-3 text-sm font-semibold text-slate-950 shadow-xl shadow-emerald-400/30 hover:shadow-emerald-300/50 transition"
           >
             Send message
           </button>
@@ -376,7 +470,7 @@
   <footer class="border-t border-slate-800 bg-slate-950 py-6">
     <div class="mx-auto max-w-6xl px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] md:text-xs text-slate-400">
       <div class="flex items-center gap-2">
-        <div class="flex h-6 w-6 items-center justify-center rounded-lg bg-slate-900 border border-slate-700 text-sky-300">
+        <div class="flex h-6 w-6 items-center justify-center rounded-lg bg-slate-900 border border-slate-700 text-emerald-300">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M4.5 7.5l15 9M4.5 16.5l15-9M3 12h18"/>
           </svg>
@@ -384,9 +478,9 @@
         <span>© <span id="year"></span> Snowbird Services. All rights reserved.</span>
       </div>
       <div class="flex items-center gap-4">
-        <a href="#" class="hover:text-sky-400">Privacy</a>
-        <a href="#" class="hover:text-sky-400">Terms</a>
-        <a href="mailto:info@snowbirdservices.com" class="hover:text-sky-400">info@snowbirdservices.com</a>
+        <a href="#" class="hover:text-emerald-300">Privacy</a>
+        <a href="#" class="hover:text-emerald-300">Terms</a>
+        <a href="mailto:info@snowbirdservices.com" class="hover:text-emerald-300">info@snowbirdservices.com</a>
       </div>
     </div>
   </footer>
