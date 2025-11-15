@@ -31,12 +31,12 @@
   <header class="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur">
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <a href="#home" class="flex items-center gap-2">
-        <!-- Logo in header -->
-        <div class="flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-tr from-sky-500 via-blue-600 to-orange-400 shadow-md shadow-sky-200 overflow-hidden">
+        <!-- Logo in header (same style as footer) -->
+        <div class="flex h-6 w-6 items-center justify-center rounded-lg bg-slate-50 border border-slate-200 overflow-hidden">
           <img
             src="assets/Minimalist%20Dark%20Blue%20Snowflake%20Logo.png"
             alt="Snowbird logo"
-            class="h-7 w-7 object-contain"
+            class="h-5 w-5 object-contain"
           />
         </div>
         <span class="font-semibold tracking-tight text-slate-900">Snowbird Services</span>
@@ -92,8 +92,8 @@
     </div>
 
     <div class="relative mx-auto max-w-6xl px-4 pt-14 pb-20 md:pb-24">
-      <div class="grid gap-12 lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] items-center">
-        <!-- Left copy -->
+      <div class="grid gap-12 lg:grid-cols-[minmax(0,1.4fr)] items-center">
+        <!-- Left copy only (Resident Snapshot removed) -->
         <div class="max-w-xl">
           <div class="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white/80 px-3 py-1 text-[11px] font-medium text-sky-700 shadow-sm shadow-sky-100">
             <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-sky-100 text-sky-500 text-xs">●</span>
@@ -135,62 +135,25 @@
             Credit impact depends on your overall credit profile and the credit bureaus used. Not all properties or residents are eligible.
           </p>
         </div>
-
-        <!-- Right panel: simple resident-focused preview -->
-        <div class="relative">
-          <div class="glass rounded-3xl p-6 shadow-xl">
-            <div class="flex items-center justify-between gap-2">
-              <div>
-                <p class="text-[11px] uppercase tracking-[0.18em] text-slate-400">Resident snapshot</p>
-                <p class="mt-1 text-sm font-semibold text-slate-900">See your rent reporting status at a glance.</p>
-              </div>
-            </div>
-
-            <div class="mt-4 grid gap-3 text-xs">
-              <div class="card-soft rounded-2xl p-4 flex items-center justify-between">
-                <div>
-                  <p class="text-[11px] font-semibold text-slate-900">Program status</p>
-                  <p class="mt-1 text-[11px] text-slate-600">You’re enrolled in rent reporting with Snowbird.</p>
-                </div>
-                <span class="inline-flex items-center gap-1 rounded-full bg-green-50 px-2.5 py-1 text-[10px] text-emerald-700 border border-emerald-100">
-                  <span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
-                  Active
-                </span>
-              </div>
-
-              <div class="card-soft rounded-2xl p-4 grid grid-cols-2 gap-3">
-                <div>
-                  <p class="text-[11px] text-slate-500">Last rent reported</p>
-                  <p class="mt-1 text-[12px] font-semibold text-slate-900">On time</p>
-                  <p class="mt-1 text-[11px] text-slate-500">Reported after your payment was processed.</p>
-                </div>
-                <div>
-                  <p class="text-[11px] text-slate-500">History length</p>
-                  <p class="mt-1 text-[12px] font-semibold text-slate-900">12 months</p>
-                  <p class="mt-1 text-[11px] text-slate-500">Past on-time months may be reported, where allowed.</p>
-                </div>
-              </div>
-
-              <div class="card-soft rounded-2xl p-4">
-                <p class="text-[11px] font-semibold text-slate-900">Where to manage your settings</p>
-                <p class="mt-2 text-[11px] text-slate-600">
-                  Snowbird is offered through your property manager. You’ll see enrollment and consent options in your lease package
-                  or resident portal if your community participates.
-                </p>
-              </div>
-            </div>
-
-            <p class="mt-4 text-[10px] text-slate-400">
-              Screens are for illustration only and may look different for your community.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
 
   <!-- How it works (for residents) -->
-  <section id="how-it-works" class="border-t border-slate-200 bg-white">
+  <section id="how-it-works" class="relative border-t border-slate-200 bg-white">
+    <!-- background snowflake -->
+    <div class="pointer-events-none absolute inset-0 -z-10 flex items-center justify-center opacity-[0.03]">
+      <div
+        class="w-[120vmin] h-[120vmin]"
+        style="
+          background-image: url('assets/Minimalist%20Dark%20Blue%20Snowflake%20Logo.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        ">
+      </div>
+    </div>
+
     <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
       <div class="max-w-2xl">
         <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">How it works</p>
@@ -241,7 +204,20 @@
   </section>
 
   <!-- Resident benefits -->
-  <section id="benefits" class="border-t border-slate-200 bg-slate-50">
+  <section id="benefits" class="relative border-t border-slate-200 bg-slate-50">
+    <!-- background snowflake -->
+    <div class="pointer-events-none absolute inset-0 -z-10 flex items-center justify-center opacity-[0.03]">
+      <div
+        class="w-[120vmin] h-[120vmin]"
+        style="
+          background-image: url('assets/Minimalist%20Dark%20Blue%20Snowflake%20Logo.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        ">
+      </div>
+    </div>
+
     <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
       <div class="max-w-2xl">
         <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">Benefits for residents</p>
@@ -302,7 +278,20 @@
   </section>
 
   <!-- Property managers & owners -->
-  <section id="pm-section" class="border-t border-slate-200 bg-white">
+  <section id="pm-section" class="relative border-t border-slate-200 bg-white">
+    <!-- background snowflake -->
+    <div class="pointer-events-none absolute inset-0 -z-10 flex items-center justify-center opacity-[0.03]">
+      <div
+        class="w-[120vmin] h-[120vmin]"
+        style="
+          background-image: url('assets/Minimalist%20Dark%20Blue%20Snowflake%20Logo.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        ">
+      </div>
+    </div>
+
     <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
       <div class="max-w-3xl">
         <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">Property managers & owners</p>
@@ -353,7 +342,20 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="border-t border-slate-200 bg-slate-50">
+  <section id="contact" class="relative border-t border-slate-200 bg-slate-50">
+    <!-- background snowflake -->
+    <div class="pointer-events-none absolute inset-0 -z-10 flex items-center justify-center opacity-[0.03]">
+      <div
+        class="w-[120vmin] h-[120vmin]"
+        style="
+          background-image: url('assets/Minimalist%20Dark%20Blue%20Snowflake%20Logo.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        ">
+      </div>
+    </div>
+
     <div class="mx-auto max-w-4xl px-4 py-16 md:py-20">
       <div class="mx-auto max-w-xl text-center">
         <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">Get in touch</p>
