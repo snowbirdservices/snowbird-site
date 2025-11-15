@@ -204,78 +204,80 @@
   </section>
 
   <!-- Resident benefits -->
-  <section id="benefits" class="relative border-t border-slate-200 bg-slate-50">
-    <!-- background snowflake: middle left -->
-    <div class="pointer-events-none absolute inset-0 -z-10">
-      <div
-        class="absolute left-0 top-1/2 -translate-y-1/2 w-[70vmin] h-[70vmin] opacity-[0.06]"
-        style="
-          background-image: url('assets/Minimalist%20Dark%20Blue%20Snowflake%20Logo.png');
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center left;
-        ">
-      </div>
+<section id="benefits" class="relative border-t border-slate-200 bg-slate-50 overflow-hidden">
+  <!-- background snowflake: middle left -->
+  <div class="pointer-events-none absolute inset-0 z-0">
+    <div
+      class="absolute left-0 top-1/2 -translate-y-1/2 w-[70vmin] h-[70vmin] opacity-10"
+      style="
+        background-image: url('assets/Minimalist%20Dark%20Blue%20Snowflake%20Logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center left;
+      ">
+    </div>
+  </div>
+
+  <div class="relative mx-auto max-w-6xl px-4 py-16 md:py-20">
+    <div class="max-w-2xl">
+      <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">Benefits for residents</p>
+      <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-900">
+        Why credit-building from rent can matter.
+      </h2>
+      <p class="mt-3 text-sm md:text-base text-slate-600">
+        Good credit can help with more than just credit cards. While nothing is guaranteed, stronger credit history may help with approvals,
+        lower deposits, and better rates in the future.
+      </p>
     </div>
 
-    <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
-      <div class="max-w-2xl">
-        <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">Benefits for residents</p>
-        <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-900">
-          Why credit-building from rent can matter.
-        </h2>
-        <p class="mt-3 text-sm md:text-base text-slate-600">
-          Good credit can help with more than just credit cards. While nothing is guaranteed, stronger credit history may help with approvals,
-          lower deposits, and better rates in the future.
+    <div class="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+      <!-- existing benefit cards unchanged -->
+      <div class="rounded-2xl border border-slate-200 bg-white p-4">
+        <p class="text-xs font-semibold text-slate-900 mb-1">Your rent finally counts</p>
+        <p class="text-xs text-slate-600">
+          Rent is often your largest bill. With Snowbird (where available), on-time rent payments no longer sit in the background—they can
+          help tell a more complete story about how you manage money.
         </p>
       </div>
-
-      <div class="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-        <div class="rounded-2xl border border-slate-200 bg-white p-4">
-          <p class="text-xs font-semibold text-slate-900 mb-1">Your rent finally counts</p>
-          <p class="text-xs text-slate-600">
-            Rent is often your largest bill. With Snowbird (where available), on-time rent payments no longer sit in the background—they can
-            help tell a more complete story about how you manage money.
-          </p>
-        </div>
-        <div class="rounded-2xl border border-slate-200 bg-white p-4">
-          <p class="text-xs font-semibold text-slate-900 mb-1">Support future goals</p>
-          <p class="text-xs text-slate-600">
-            A stronger credit profile can help with future apartment applications, utilities, and in some cases, interest rates on other
-            credit products you may use.
-          </p>
-        </div>
-        <div class="rounded-2xl border border-slate-200 bg-white p-4">
-          <p class="text-xs font-semibold text-slate-900 mb-1">No new debt required</p>
-          <p class="text-xs text-slate-600">
-            Snowbird focuses on reporting what you’re already paying—rent. You don’t have to open a new credit card or loan just to try to
-            build history.
-          </p>
-        </div>
-        <div class="rounded-2xl border border-slate-200 bg-white p-4">
-          <p class="text-xs font-semibold text-slate-900 mb-1">Clear and optional</p>
-          <p class="text-xs text-slate-600">
-            Your property manager controls how the program is offered, but enrollment is always clearly explained and can be turned off going
-            forward if you no longer wish to participate.
-          </p>
-        </div>
-        <div class="rounded-2xl border border-slate-200 bg-white p-4">
-          <p class="text-xs font-semibold text-slate-900 mb-1">Designed with transparency</p>
-          <p class="text-xs text-slate-600">
-            Your community decides which charges are included and how missed payments are handled. Snowbird helps keep the process consistent
-            and auditable.
-          </p>
-        </div>
-        <div class="rounded-2xl border border-slate-200 bg-white p-4">
-          <p class="text-xs font-semibold text-slate-900 mb-1">Works alongside your resident portal</p>
-          <p class="text-xs text-slate-600">
-            No password sprawl. You keep using the systems you already know for paying rent, while Snowbird works behind the scenes with your
-            property manager.
-          </p>
-        </div>
+      <div class="rounded-2xl border border-slate-200 bg-white p-4">
+        <p class="text-xs font-semibold text-slate-900 mb-1">Support future goals</p>
+        <p class="text-xs text-slate-600">
+          A stronger credit profile can help with future apartment applications, utilities, and in some cases, interest rates on other
+          credit products you may use.
+        </p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 bg-white p-4">
+        <p class="text-xs font-semibold text-slate-900 mb-1">No new debt required</p>
+        <p class="text-xs text-slate-600">
+          Snowbird focuses on reporting what you’re already paying—rent. You don’t have to open a new credit card or loan just to try to
+          build history.
+        </p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 bg-white p-4">
+        <p class="text-xs font-semibold text-slate-900 mb-1">Clear and optional</p>
+        <p class="text-xs text-slate-600">
+          Your property manager controls how the program is offered, but enrollment is always clearly explained and can be turned off going
+          forward if you no longer wish to participate.
+        </p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 bg-white p-4">
+        <p class="text-xs font-semibold text-slate-900 mb-1">Designed with transparency</p>
+        <p class="text-xs text-slate-600">
+          Your community decides which charges are included and how missed payments are handled. Snowbird helps keep the process consistent
+          and auditable.
+        </p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 bg-white p-4">
+        <p class="text-xs font-semibold text-slate-900 mb-1">Works alongside your resident portal</p>
+        <p class="text-xs text-slate-600">
+          No password sprawl. You keep using the systems you already know for paying rent, while Snowbird works behind the scenes with your
+          property manager.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Property managers & owners -->
   <section id="pm-section" class="relative border-t border-slate-200 bg-white">
@@ -342,111 +344,112 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="relative border-t border-slate-200 bg-slate-50">
-    <!-- background snowflake: middle right -->
-    <div class="pointer-events-none absolute inset-0 -z-10">
-      <div
-        class="absolute right-0 top-1/2 -translate-y-1/2 w-[70vmin] h-[70vmin] opacity-[0.06]"
-        style="
-          background-image: url('assets/Minimalist%20Dark%20Blue%20Snowflake%20Logo.png');
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center right;
-        ">
-      </div>
+  <section id="contact" class="relative border-t border-slate-200 bg-slate-50 overflow-hidden">
+  <!-- background snowflake: middle right -->
+  <div class="pointer-events-none absolute inset-0 z-0">
+    <div
+      class="absolute right-0 top-1/2 -translate-y-1/2 w-[70vmin] h-[70vmin] opacity-10"
+      style="
+        background-image: url('assets/Minimalist%20Dark%20Blue%20Snowflake%20Logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center right;
+      ">
+    </div>
+  </div>
+
+  <div class="relative mx-auto max-w-4xl px-4 py-16 md:py-20">
+    <div class="mx-auto max-w-xl text-center">
+      <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">Get in touch</p>
+      <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-900">
+        Residents and property managers — we’re here to help.
+      </h2>
+      <p class="mt-3 text-sm md:text-base text-slate-600">
+        Tell us whether you’re a resident or a property manager, and share a few details. We’ll follow up with information tailored to you.
+      </p>
     </div>
 
-    <div class="mx-auto max-w-4xl px-4 py-16 md:py-20">
-      <div class="mx-auto max-w-xl text-center">
-        <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">Get in touch</p>
-        <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-900">
-          Residents and property managers — we’re here to help.
-        </h2>
-        <p class="mt-3 text-sm md:text-base text-slate-600">
-          Tell us whether you’re a resident or a property manager, and share a few details. We’ll follow up with information tailored to you.
-        </p>
-      </div>
+    <div class="mt-8 rounded-3xl border border-slate-200 bg-white p-5 md:p-7 shadow-sm">
+      <form
+        class="grid gap-4 text-left"
+        method="POST"
+        action="https://formspree.io/f/xrbredko"
+        accept-charset="UTF-8"
+      >
+        <input type="hidden" name="_subject" value="New Snowbird inquiry">
+        <input type="text" name="_gotcha" style="display:none">
 
-      <div class="mt-8 rounded-3xl border border-slate-200 bg-white p-5 md:p-7 shadow-sm">
-        <form
-          class="grid gap-4 text-left"
-          method="POST"
-          action="https://formspree.io/f/xrbredko"
-          accept-charset="UTF-8"
-        >
-          <input type="hidden" name="_subject" value="New Snowbird inquiry">
-          <input type="text" name="_gotcha" style="display:none">
-
-          <div class="grid md:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-xs font-medium text-slate-700 mb-1">Your name</label>
-              <input
-                required
-                type="text"
-                name="name"
-                placeholder="Jane Doe"
-                class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
-              />
-            </div>
-            <div>
-              <label class="block text-xs font-medium text-slate-700 mb-1">Email</label>
-              <input
-                required
-                type="email"
-                name="email"
-                placeholder="you@example.com"
-                class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
-              />
-            </div>
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-xs font-medium text-slate-700 mb-1">I am a…</label>
-              <select
-                name="audience"
-                class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
-              >
-                <option value="Resident">Resident</option>
-                <option value="Property Manager">Property manager</option>
-                <option value="Owner">Owner / investor</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-xs font-medium text-slate-700 mb-1">Community / Company (optional)</label>
-              <input
-                type="text"
-                name="company"
-                placeholder="Your property or company name"
-                class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
-              />
-            </div>
-          </div>
-
+        <div class="grid md:grid-cols-2 gap-4">
           <div>
-            <label class="block text-xs font-medium text-slate-700 mb-1">How can we help?</label>
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="For residents: tell us if your property mentioned Snowbird and what you’d like to know. For property managers: share unit count, markets, and whether you’re interested in rent reporting, utility billback, or both."
+            <label class="block text-xs font-medium text-slate-700 mb-1">Your name</label>
+            <input
+              required
+              type="text"
+              name="name"
+              placeholder="Jane Doe"
               class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
-            ></textarea>
+            />
           </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-700 mb-1">Email</label>
+            <input
+              required
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+              class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
+            />
+          </div>
+        </div>
 
-          <button
-            type="submit"
-            class="inline-flex justify-center rounded-full bg-gradient-to-r from-sky-500 via-blue-600 to-orange-400 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-sky-200 hover:shadow-lg hover:shadow-sky-200/80 transition"
-          >
-            Send message
-          </button>
-          <p class="text-[11px] text-slate-400 mt-1">
-            By submitting, you agree to be contacted about Snowbird Services. We respect your privacy.
-          </p>
-        </form>
-      </div>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-medium text-slate-700 mb-1">I am a…</label>
+            <select
+              name="audience"
+              class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
+            >
+              <option value="Resident">Resident</option>
+              <option value="Property Manager">Property manager</option>
+              <option value="Owner">Owner / investor</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-700 mb-1">Community / Company (optional)</label>
+            <input
+              type="text"
+              name="company"
+              placeholder="Your property or company name"
+              class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-medium text-slate-700 mb-1">How can we help?</label>
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="For residents: tell us if your property mentioned Snowbird and what you’d like to know. For property managers: share unit count, markets, and whether you’re interested in rent reporting, utility billback, or both."
+            class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="inline-flex justify-center rounded-full bg-gradient-to-r from-sky-500 via-blue-600 to-orange-400 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-sky-200 hover:shadow-lg hover:shadow-sky-200/80 transition"
+        >
+          Send message
+        </button>
+        <p class="text-[11px] text-slate-400 mt-1">
+          By submitting, you agree to be contacted about Snowbird Services. We respect your privacy.
+        </p>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer class="border-t border-slate-200 bg-white py-6">
