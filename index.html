@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Snowbird Services — Rent Reporting & Utility Billback for Multifamily</title>
-  <meta name="description" content="Snowbird Services helps multifamily owners and property managers offer resident rent reporting to build credit scores while automating fair utility billback and expense recovery." />
+  <title>Snowbird Services — Build Credit with On-Time Rent</title>
+  <meta name="description" content="Snowbird Services helps residents build credit by reporting on-time rent payments, and gives property managers a simple way to offer credit-building and utility billback." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
     }
     .glass {
       backdrop-filter: blur(16px);
-      background: radial-gradient(circle at top left, rgba(129, 199, 245, 0.22), rgba(255,255,255,0.96));
+      background: radial-gradient(circle at top left, rgba(129,199,245,0.22), rgba(255,255,255,0.96));
       border: 1px solid rgba(148,163,184,0.5);
     }
     .card-soft {
@@ -31,9 +31,10 @@
   <header class="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur">
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <a href="#home" class="flex items-center gap-2">
+        <!-- Logo in header -->
         <div class="flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-tr from-sky-500 via-blue-600 to-orange-400 shadow-md shadow-sky-200 overflow-hidden">
           <img
-            src="/assets/snowbird-snowflake.png"
+            src="assets/Minimalist%20Dark%20Blue%20Snowflake%20Logo.png"
             alt="Snowbird logo"
             class="h-7 w-7 object-contain"
           />
@@ -41,13 +42,13 @@
         <span class="font-semibold tracking-tight text-slate-900">Snowbird Services</span>
       </a>
       <nav class="hidden md:flex items-center gap-8 text-sm text-slate-600">
-        <a href="#rent-reporting" class="hover:text-sky-700 transition">Rent reporting</a>
-        <a href="#billback" class="hover:text-sky-700 transition">Utility billback</a>
-        <a href="#why" class="hover:text-sky-700 transition">Why Snowbird</a>
+        <a href="#how-it-works" class="hover:text-sky-700 transition">How it works</a>
+        <a href="#benefits" class="hover:text-sky-700 transition">Benefits</a>
+        <a href="#pm-section" class="hover:text-sky-700 transition">Property managers</a>
         <a href="#contact" class="hover:text-sky-700 transition">Contact</a>
       </nav>
       <a href="#contact" class="hidden md:inline-flex items-center rounded-full bg-gradient-to-r from-sky-500 via-blue-600 to-orange-400 px-4 py-2 text-xs font-semibold text-white shadow-md shadow-sky-200 hover:shadow-lg hover:shadow-sky-200/80 transition">
-        Schedule a demo
+        Get started
       </a>
       <button id="mobile-toggle" class="md:hidden inline-flex items-center justify-center rounded-full border border-slate-300 bg-white/70 p-2 text-slate-700">
         <span class="sr-only">Open navigation</span>
@@ -58,25 +59,25 @@
     </div>
     <div id="mobile-menu" class="md:hidden hidden border-t border-slate-200 bg-white/95">
       <nav class="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-3 text-sm text-slate-700">
-        <a href="#rent-reporting" class="hover:text-sky-700">Rent reporting</a>
-        <a href="#billback" class="hover:text-sky-700">Utility billback</a>
-        <a href="#why" class="hover:text-sky-700">Why Snowbird</a>
+        <a href="#how-it-works" class="hover:text-sky-700">How it works</a>
+        <a href="#benefits" class="hover:text-sky-700">Benefits</a>
+        <a href="#pm-section" class="hover:text-sky-700">Property managers</a>
         <a href="#contact" class="hover:text-sky-700">Contact</a>
         <a href="#contact" class="mt-1 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-sky-500 via-blue-600 to-orange-400 px-4 py-2 text-xs font-semibold text-white">
-          Schedule a demo
+          Get started
         </a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero (resident-focused) -->
   <section id="home" class="relative overflow-hidden bg-transparent">
     <!-- Large faint snowflake hero background -->
     <div class="pointer-events-none absolute inset-0 -z-10 flex items-center justify-center opacity-10">
       <div
         class="w-[130vmin] h-[130vmin]"
         style="
-          background-image: url('/assets/snowbird-snowflake.png');
+          background-image: url('assets/Minimalist%20Dark%20Blue%20Snowflake%20Logo.png');
           background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
@@ -96,296 +97,257 @@
         <div class="max-w-xl">
           <div class="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white/80 px-3 py-1 text-[11px] font-medium text-sky-700 shadow-sm shadow-sky-100">
             <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-sky-100 text-sky-500 text-xs">●</span>
-            <span>For multifamily owners & property managers</span>
+            <span>For residents in Snowbird-partnered communities</span>
           </div>
 
           <h1 class="mt-5 text-3.5xl md:text-5xl font-extrabold tracking-tight leading-tight text-slate-900">
-            Help residents
-            <span class="bg-gradient-to-r from-sky-500 via-blue-600 to-orange-400 bg-clip-text text-transparent">build credit</span>
-            through on-time rent payments.
+            Build your credit
+            <span class="bg-gradient-to-r from-sky-500 via-blue-600 to-orange-400 bg-clip-text text-transparent">just by paying rent on time.</span>
           </h1>
 
           <p class="mt-4 text-sm md:text-base text-slate-600">
-            Snowbird plugs into your existing PMS to report on-time rent payments and automate utility billback—so residents see
-            real credit progress and you capture more NOI, whether you manage 20 units or 20,000.
+            Snowbird turns your on-time rent into reported credit history. If your property manager offers Snowbird, your monthly rent
+            payments can help you build a stronger credit profile—without taking on new debt.
           </p>
 
           <div class="mt-6 flex flex-wrap gap-3">
-            <a href="#contact" class="inline-flex items-center rounded-full bg-gradient-to-r from-sky-500 via-blue-600 to-orange-400 px-5 py-3 text-sm font-semibold text-white shadow-md shadow-sky-200 hover:shadow-lg hover:shadow-sky-200/80 transition">
-              Talk with our team
+            <a href="#how-it-works" class="inline-flex items-center rounded-full bg-gradient-to-r from-sky-500 via-blue-600 to-orange-400 px-5 py-3 text-sm font-semibold text-white shadow-md shadow-sky-200 hover:shadow-lg hover:shadow-sky-200/80 transition">
+              How Snowbird works
             </a>
-            <a href="#rent-reporting" class="inline-flex items-center rounded-full border border-slate-200 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-800 hover:border-sky-300 hover:text-sky-700 transition">
-              See how rent reporting works
+            <a href="#pm-section" class="inline-flex items-center rounded-full border border-slate-200 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-800 hover:border-sky-300 hover:text-sky-700 transition">
+              I’m a property manager
             </a>
           </div>
 
           <div class="mt-6 flex flex-wrap gap-2 text-[11px] text-slate-600">
             <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1">
-              📈 <span>Credit-building amenity for residents</span>
+              📈 <span>On-time rent can help your credit history</span>
             </span>
             <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1">
-              💸 <span>Utility cost recovery & RUBS</span>
+              🔒 <span>Clear consent & simple opt-out</span>
             </span>
             <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1">
-              🔌 <span>No PMS rip-and-replace</span>
+              💬 <span>Offered through participating properties</span>
             </span>
           </div>
 
           <p class="mt-3 text-[10px] text-slate-400">
-            Program design can be tailored to your properties, markets, and resident profile.
+            Credit impact depends on your overall credit profile and the credit bureaus used. Not all properties or residents are eligible.
           </p>
         </div>
 
-        <!-- Right "product" panel -->
+        <!-- Right panel: simple resident-focused preview -->
         <div class="relative">
           <div class="glass rounded-3xl p-6 shadow-xl">
             <div class="flex items-center justify-between gap-2">
               <div>
-                <p class="text-[11px] uppercase tracking-[0.18em] text-slate-400">Snowbird dashboard</p>
-                <p class="mt-1 text-sm font-semibold text-slate-900">Credit & utility recovery at a glance</p>
+                <p class="text-[11px] uppercase tracking-[0.18em] text-slate-400">Resident snapshot</p>
+                <p class="mt-1 text-sm font-semibold text-slate-900">See your rent reporting status at a glance.</p>
               </div>
-              <span class="inline-flex items-center gap-1 rounded-full bg-white/80 px-2.5 py-1 text-[10px] text-slate-600 border border-slate-200">
-                <span class="h-1.5 w-1.5 rounded-full bg-orange-400"></span>
-                Syncing with PMS
-              </span>
             </div>
 
-            <div class="mt-5 grid grid-cols-2 gap-4 text-xs">
-              <div class="card-soft rounded-2xl p-4">
-                <div class="flex items-center justify-between gap-2">
-                  <span class="text-[11px] font-semibold text-sky-700">Rent reporting</span>
-                  <span class="rounded-full bg-white/80 px-2 py-0.5 text-[10px] text-slate-600 border border-slate-200">
-                    Credit lift
-                  </span>
+            <div class="mt-4 grid gap-3 text-xs">
+              <div class="card-soft rounded-2xl p-4 flex items-center justify-between">
+                <div>
+                  <p class="text-[11px] font-semibold text-slate-900">Program status</p>
+                  <p class="mt-1 text-[11px] text-slate-600">You’re enrolled in rent reporting with Snowbird.</p>
                 </div>
-                <p class="mt-2 text-[11px] text-slate-600">
-                  Pull payment history from your PMS and send on-time rent data to credit bureaus on a predictable cadence.
-                </p>
-                <div class="mt-3 flex items-center justify-between text-[10px] text-slate-400">
-                  <span>Enrollment & consent tracked</span>
-                  <span class="inline-flex items-center gap-1">
-                    <span class="h-1.5 w-1.5 rounded-full bg-orange-400"></span>
-                    Active
-                  </span>
-                </div>
+                <span class="inline-flex items-center gap-1 rounded-full bg-green-50 px-2.5 py-1 text-[10px] text-emerald-700 border border-emerald-100">
+                  <span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+                  Active
+                </span>
               </div>
 
-              <div class="card-soft rounded-2xl p-4">
-                <span class="text-[11px] font-semibold text-sky-700">Utility billback</span>
-                <p class="mt-2 text-[11px] text-slate-600">
-                  Configure allocation rules for any size property and generate clean, resident-ready statements each month.
-                </p>
-                <div class="mt-3 text-[10px] text-slate-400">
-                  <span>Supports water, sewer, trash, gas, electric and more.</span>
+              <div class="card-soft rounded-2xl p-4 grid grid-cols-2 gap-3">
+                <div>
+                  <p class="text-[11px] text-slate-500">Last rent reported</p>
+                  <p class="mt-1 text-[12px] font-semibold text-slate-900">On time</p>
+                  <p class="mt-1 text-[11px] text-slate-500">Reported after your payment was processed.</p>
+                </div>
+                <div>
+                  <p class="text-[11px] text-slate-500">History length</p>
+                  <p class="mt-1 text-[12px] font-semibold text-slate-900">12 months</p>
+                  <p class="mt-1 text-[11px] text-slate-500">Past on-time months may be reported, where allowed.</p>
                 </div>
               </div>
 
               <div class="card-soft rounded-2xl p-4">
-                <span class="text-[11px] font-semibold text-sky-700">Compliance & audit trail</span>
+                <p class="text-[11px] font-semibold text-slate-900">Where to manage your settings</p>
                 <p class="mt-2 text-[11px] text-slate-600">
-                  Store consent records, program terms, and historical file submissions in one place for audits and regulators.
-                </p>
-              </div>
-
-              <div class="card-soft rounded-2xl p-4">
-                <span class="text-[11px] font-semibold text-sky-700">Portfolio & property analytics</span>
-                <p class="mt-2 text-[11px] text-slate-600">
-                  Track enrollment, credit-building engagement, recovery rates, and utilities as % of revenue across any mix of
-                  assets.
+                  Snowbird is offered through your property manager. You’ll see enrollment and consent options in your lease package
+                  or resident portal if your community participates.
                 </p>
               </div>
             </div>
 
-            <div class="mt-5 flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-500">
-              <p>Integrates with leading multifamily PMS platforms via API/webhooks.</p>
-              <span class="rounded-full border border-slate-200 px-2 py-0.5 text-[10px] text-slate-500 bg-white/70">
-                Works with small, mid-size, and large portfolios
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Rent reporting -->
-  <section id="rent-reporting" class="border-t border-slate-200 bg-white">
-    <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
-      <div class="grid gap-10 md:grid-cols-[minmax(0,1.2fr)_minmax(0,1.1fr)] items-start">
-        <div>
-          <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">Rent reporting</p>
-          <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-900">
-            Turn on-time rent into real credit history.
-          </h2>
-          <p class="mt-3 text-sm md:text-base text-slate-600">
-            For most residents, rent is their largest monthly payment—and it usually doesn’t count toward their credit score.
-            Snowbird lets you change that, without adding complicated processes for your onsite staff or management company.
-          </p>
-
-          <ul class="mt-6 space-y-3 text-sm text-slate-600">
-            <li class="flex gap-3">
-              <span class="mt-1 h-1.5 w-1.5 rounded-full bg-orange-400"></span>
-              <span><span class="font-medium text-slate-900">Automatic reporting:</span> Pull rent payments from your PMS and send them through a controlled, auditable pipeline.</span>
-            </li>
-            <li class="flex gap-3">
-              <span class="mt-1 h-1.5 w-1.5 rounded-full bg-orange-400"></span>
-              <span><span class="font-medium text-slate-900">Resident-friendly enrollment:</span> Clear consent flow, simple explanations, and easy opt-out to align with regulations and build trust.</span>
-            </li>
-            <li class="flex gap-3">
-              <span class="mt-1 h-1.5 w-1.5 rounded-full bg-orange-400"></span>
-              <span><span class="font-medium text-slate-900">Amenity with impact:</span> Differentiate your communities while supporting resident financial health and retention.</span>
-            </li>
-            <li class="flex gap-3">
-              <span class="mt-1 h-1.5 w-1.5 rounded-full bg-orange-400"></span>
-              <span><span class="font-medium text-slate-900">Flexible program design:</span> Works for one duplex, a single asset, or a multi-state portfolio. Choose which charges to include and how to handle delinquencies.</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="space-y-4">
-          <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
-            <p class="text-xs font-semibold text-slate-800 mb-1">Resident view</p>
-            <p class="text-sm font-semibold text-slate-900">“My rent finally counts for something.”</p>
-            <p class="mt-3 text-xs text-slate-600">
-              Residents can see when their rent reporting is active, what’s being reported, and how to get support—all without
-              tying up your leasing office.
+            <p class="mt-4 text-[10px] text-slate-400">
+              Screens are for illustration only and may look different for your community.
             </p>
-            <div class="mt-4 grid grid-cols-2 gap-3 text-[11px]">
-              <div class="rounded-2xl border border-slate-200 bg-white p-3">
-                <p class="text-slate-500">Credit-building status</p>
-                <p class="mt-1 text-slate-900 font-semibold">On track</p>
-                <p class="mt-1 text-slate-500">Last rent reported: <span class="text-orange-500">Paid on time</span></p>
-              </div>
-              <div class="rounded-2xl border border-slate-200 bg-white p-3">
-                <p class="text-slate-500">Enrollment</p>
-                <p class="mt-1 text-slate-900 font-semibold">Active</p>
-                <p class="mt-1 text-slate-500">Manage directly from resident portal.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="rounded-3xl border border-orange-200 bg-orange-50 p-4 text-[11px] text-orange-800">
-            <p class="font-semibold text-xs">Works well for:</p>
-            <ul class="mt-2 space-y-1">
-              <li>• Independent owners and small PM companies</li>
-              <li>• Regional management companies and REITs</li>
-              <li>• Workforce, conventional, and affordable housing communities</li>
-            </ul>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Utility billback -->
-  <section id="billback" class="border-t border-slate-200 bg-slate-50">
+  <!-- How it works (for residents) -->
+  <section id="how-it-works" class="border-t border-slate-200 bg-white">
     <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
-      <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-        <div class="max-w-xl">
-          <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">Utility billback</p>
-          <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-900">
-            Recover utility spend without buried spreadsheets.
-          </h2>
-          <p class="mt-3 text-sm md:text-base text-slate-600">
-            Whether you run a handful of units on RUBS or multiple properties on full billback, Snowbird helps you allocate costs
-            fairly, generate clean statements, and keep residents informed.
-          </p>
-        </div>
-        <div class="text-xs text-slate-500 max-w-sm">
-          Start on the property where utilities are hurting NOI the most, then standardize your approach across the rest of your
-          portfolio at your own pace.
-        </div>
+      <div class="max-w-2xl">
+        <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">How it works</p>
+        <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-900">
+          Simple credit-building, built around your rent.
+        </h2>
+        <p class="mt-3 text-sm md:text-base text-slate-600">
+          Snowbird works in the background with your property manager’s system. You keep paying rent the same way you do now—if you’re enrolled,
+          your on-time payments can be reported to participating credit bureaus.
+        </p>
       </div>
 
       <div class="mt-8 grid gap-6 md:grid-cols-3">
-        <div class="rounded-2xl border border-slate-200 bg-white p-5">
-          <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-sky-50 text-lg">
-            💧
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+          <div class="mb-3 flex h-9 w-9 items-center justify-center rounded-xl bg-sky-50 text-sm">
+            1
           </div>
-          <h3 class="font-semibold text-slate-900 text-sm">RUBS & allocation rules</h3>
+          <h3 class="font-semibold text-slate-900 text-sm">Enroll through your community</h3>
           <p class="mt-2 text-xs md:text-sm text-slate-600">
-            Configure allocation by occupants, square footage, bedrooms, or hybrid formulas. Apply consistent rules—from one
-            small building to many—without redoing the math each month.
+            If your property uses Snowbird, your leasing team or resident portal will explain the program and how to opt in. You’ll always
+            see clear, simple language about what’s reported.
           </p>
         </div>
 
-        <div class="rounded-2xl border border-slate-200 bg-white p-5">
-          <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-sky-50 text-lg">
-            📄
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+          <div class="mb-3 flex h-9 w-9 items-center justify-center rounded-xl bg-sky-50 text-sm">
+            2
           </div>
-          <h3 class="font-semibold text-slate-900 text-sm">Resident-ready statements</h3>
+          <h3 class="font-semibold text-slate-900 text-sm">Pay rent on time as usual</h3>
           <p class="mt-2 text-xs md:text-sm text-slate-600">
-            Generate billing files and statements that clearly separate rent and utilities, with explanations your residents can
-            actually understand, cutting down on “why is my bill this amount?” calls.
+            You don’t need a new app or card. Your property manager shares your payment status with Snowbird so we can prepare files for
+            participating credit bureaus.
           </p>
         </div>
 
-        <div class="rounded-2xl border border-slate-200 bg-white p-5">
-          <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-sky-50 text-lg">
-            📊
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+          <div class="mb-3 flex h-9 w-9 items-center justify-center rounded-xl bg-sky-50 text-sm">
+            3
           </div>
-          <h3 class="font-semibold text-slate-900 text-sm">Recovery & compliance</h3>
+          <h3 class="font-semibold text-slate-900 text-sm">Build history over time</h3>
           <p class="mt-2 text-xs md:text-sm text-slate-600">
-            Track recovery rates, flags, and exceptions by property. Export audit-friendly reports for owners, regulators, and
-            utility providers—no matter how many units sit behind them.
+            Over time, your record of on-time rent can become part of your reported history. While every person’s situation is different,
+            consistent on-time payments may support a stronger credit profile.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Why Snowbird -->
-  <section id="why" class="border-t border-slate-200 bg-white">
+  <!-- Resident benefits -->
+  <section id="benefits" class="border-t border-slate-200 bg-slate-50">
     <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
       <div class="max-w-2xl">
-        <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">Why Snowbird</p>
+        <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">Benefits for residents</p>
         <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-900">
-          Built by multifamily operators, for owners and property managers.
+          Why credit-building from rent can matter.
         </h2>
         <p class="mt-3 text-sm md:text-base text-slate-600">
-          We’ve lived the spreadsheets, the call queues, and the “why doesn’t my rent help my credit?” conversations. Snowbird is
-          designed to work the way independent owners, property management companies, and onsite teams actually operate.
+          Good credit can help with more than just credit cards. While nothing is guaranteed, stronger credit history may help with approvals,
+          lower deposits, and better rates in the future.
         </p>
       </div>
 
       <div class="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-          <p class="text-xs font-semibold text-slate-900 mb-1">Owners & owner-operators</p>
+        <div class="rounded-2xl border border-slate-200 bg-white p-4">
+          <p class="text-xs font-semibold text-slate-900 mb-1">Your rent finally counts</p>
           <p class="text-xs text-slate-600">
-            Lift NOI with better recovery and new ancillary revenue while offering residents a tangible, measurable financial
-            benefit.
+            Rent is often your largest bill. With Snowbird (where available), on-time rent payments no longer sit in the background—they can
+            help tell a more complete story about how you manage money.
           </p>
         </div>
-        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-          <p class="text-xs font-semibold text-slate-900 mb-1">Property management companies</p>
+        <div class="rounded-2xl border border-slate-200 bg-white p-4">
+          <p class="text-xs font-semibold text-slate-900 mb-1">Support future goals</p>
           <p class="text-xs text-slate-600">
-            Standardize rent reporting and utility programs across all owners you serve, while giving your teams clear playbooks.
+            A stronger credit profile can help with future apartment applications, utilities, and in some cases, interest rates on other
+            credit products you may use.
           </p>
         </div>
-        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-          <p class="text-xs font-semibold text-slate-900 mb-1">Onsite teams</p>
+        <div class="rounded-2xl border border-slate-200 bg-white p-4">
+          <p class="text-xs font-semibold text-slate-900 mb-1">No new debt required</p>
           <p class="text-xs text-slate-600">
-            Fewer systems and fewer escalations. One place to understand who’s enrolled, what’s billed, and how to explain it.
+            Snowbird focuses on reporting what you’re already paying—rent. You don’t have to open a new credit card or loan just to try to
+            build history.
           </p>
         </div>
-        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-          <p class="text-xs font-semibold text-slate-900 mb-1">Residents</p>
+        <div class="rounded-2xl border border-slate-200 bg-white p-4">
+          <p class="text-xs font-semibold text-slate-900 mb-1">Clear and optional</p>
           <p class="text-xs text-slate-600">
-            Clear, opt-in programs that help rent and utilities work harder for their credit profile and financial goals.
+            Your property manager controls how the program is offered, but enrollment is always clearly explained and can be turned off going
+            forward if you no longer wish to participate.
           </p>
         </div>
-        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-          <p class="text-xs font-semibold text-slate-900 mb-1">Implementation</p>
+        <div class="rounded-2xl border border-slate-200 bg-white p-4">
+          <p class="text-xs font-semibold text-slate-900 mb-1">Designed with transparency</p>
           <p class="text-xs text-slate-600">
-            Start with one property or one owner, refine your program, then roll out to additional communities on your timeline.
+            Your community decides which charges are included and how missed payments are handled. Snowbird helps keep the process consistent
+            and auditable.
           </p>
         </div>
-        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-          <p class="text-xs font-semibold text-slate-900 mb-1">Support</p>
+        <div class="rounded-2xl border border-slate-200 bg-white p-4">
+          <p class="text-xs font-semibold text-slate-900 mb-1">Works alongside your resident portal</p>
           <p class="text-xs text-slate-600">
-            Operator-first support that can work directly with owners, PMCs, or both—whatever your management structure looks like.
+            No password sprawl. You keep using the systems you already know for paying rent, while Snowbird works behind the scenes with your
+            property manager.
           </p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Property managers & owners -->
+  <section id="pm-section" class="border-t border-slate-200 bg-white">
+    <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
+      <div class="max-w-3xl">
+        <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">Property managers & owners</p>
+        <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-900">
+          Offer credit-building and utility recovery without rebuilding your tech stack.
+        </h2>
+        <p class="mt-3 text-sm md:text-base text-slate-600">
+          Snowbird is built by operators, for operators. We help you offer rent reporting as a resident benefit, and pair it with utility
+          billback tools that make cost recovery more transparent and consistent across your portfolio.
+        </p>
+      </div>
+
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+          <h3 class="font-semibold text-slate-900 text-sm">Rent reporting made operational</h3>
+          <p class="mt-2 text-xs md:text-sm text-slate-600">
+            Pull rent payments from your PMS, manage enrollment and consent, and send structured files to participating credit bureaus—without
+            adding manual work to your onsite teams.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+          <h3 class="font-semibold text-slate-900 text-sm">Utility billback & RUBS</h3>
+          <p class="mt-2 text-xs md:text-sm text-slate-600">
+            Configure rules for RUBS or full billback, generate resident-ready statements, and get visibility into recovery rates and exceptions.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+          <h3 class="font-semibold text-slate-900 text-sm">Works from 20 to 20,000+ units</h3>
+          <p class="mt-2 text-xs md:text-sm text-slate-600">
+            Start with a single property or ownership group and expand at your own pace. Snowbird supports independent owners, PMCs, and larger
+            regional portfolios.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-8 rounded-2xl border border-slate-200 bg-slate-50 p-5 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+        <div class="max-w-xl">
+          <p class="text-xs font-semibold text-slate-900 mb-1">Want to bring Snowbird to your communities?</p>
+          <p class="text-xs text-slate-600">
+            If you’re a property manager or owner, we’d love to show you how rent reporting and utility billback can work in your specific markets.
+          </p>
+        </div>
+        <a href="#contact" class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-sky-500 via-blue-600 to-orange-400 px-5 py-2.5 text-xs font-semibold text-white shadow-md shadow-sky-200 hover:shadow-lg hover:shadow-sky-200/80 transition">
+          Talk with our team
+        </a>
       </div>
     </div>
   </section>
@@ -395,10 +357,11 @@
     <div class="mx-auto max-w-4xl px-4 py-16 md:py-20">
       <div class="mx-auto max-w-xl text-center">
         <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">Get in touch</p>
-        <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-900">Tell us about your properties.</h2>
+        <h2 class="mt-2 text-2.5xl md:text-3xl font-bold tracking-tight text-slate-900">
+          Residents and property managers — we’re here to help.
+        </h2>
         <p class="mt-3 text-sm md:text-base text-slate-600">
-          Share a few details about your assets, markets, and goals. We’ll follow up with a tailored demo—whether you manage a
-          single building or a large portfolio.
+          Tell us whether you’re a resident or a property manager, and share a few details. We’ll follow up with information tailored to you.
         </p>
       </div>
 
@@ -429,38 +392,42 @@
                 required
                 type="email"
                 name="email"
-                placeholder="you@company.com"
+                placeholder="you@example.com"
+                class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
+              />
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-medium text-slate-700 mb-1">I am a…</label>
+              <select
+                name="audience"
+                class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
+              >
+                <option value="Resident">Resident</option>
+                <option value="Property Manager">Property manager</option>
+                <option value="Owner">Owner / investor</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-slate-700 mb-1">Community / Company (optional)</label>
+              <input
+                type="text"
+                name="company"
+                placeholder="Your property or company name"
                 class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
               />
             </div>
           </div>
 
           <div>
-            <label class="block text-xs font-medium text-slate-700 mb-1">Company / Role</label>
-            <input
-              type="text"
-              name="company"
-              placeholder="e.g., Owner, Property Manager, Regional, etc."
-              class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
-            />
-          </div>
-
-          <div>
-            <label class="block text-xs font-medium text-slate-700 mb-1">Rough unit count (optional)</label>
-            <input
-              type="text"
-              name="portfolio"
-              placeholder="e.g., 24 units, 2 properties • 1,200 units, 8 properties"
-              class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
-            />
-          </div>
-
-          <div>
-            <label class="block text-xs font-medium text-slate-700 mb-1">What problems are you trying to solve?</label>
+            <label class="block text-xs font-medium text-slate-700 mb-1">How can we help?</label>
             <textarea
               name="message"
               rows="5"
-              placeholder="e.g., help residents build credit, recover utilities fairly, and standardize programs across owners or properties…"
+              placeholder="For residents: tell us if your property mentioned Snowbird and what you’d like to know. For property managers: share unit count, markets, and whether you’re interested in rent reporting, utility billback, or both."
               class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
             ></textarea>
           </div>
@@ -479,12 +446,14 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="border-t border-slate-200 bg-white py-6">
     <div class="mx-auto max-w-6xl px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] md:text-xs text-slate-500">
       <div class="flex items-center gap-2">
+        <!-- Logo in footer -->
         <div class="flex h-6 w-6 items-center justify-center rounded-lg bg-slate-50 border border-slate-200 overflow-hidden">
           <img
-            src="/assets/snowbird-snowflake.png"
+            src="assets/Minimalist%20Dark%20Blue%20Snowflake%20Logo.png"
             alt="Snowbird logo"
             class="h-5 w-5 object-contain"
           />
