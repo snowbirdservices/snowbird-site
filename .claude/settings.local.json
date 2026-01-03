@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git --version:*)",
+      "Bash(git clone:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git fetch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git -C \"C:\\\\Code\\\\Snowbird-site\" status)",
+      "Bash(git -C \"C:\\\\Code\\\\Snowbird-site\" add index.html CLAUDE.md)",
+      "Bash(git -C \"C:\\\\Code\\\\Snowbird-site\" commit -m \"$\\(cat <<''EOF''\nAdd dispute email to contact section\n\nAdded disputes@snowbird-services.com notice below the contact form.\nAlso added CLAUDE.md for development guidance.\n\n🤖 Generated with [Claude Code]\\(https://claude.ai/code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git -C \"C:\\\\Code\\\\Snowbird-site\" push)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
